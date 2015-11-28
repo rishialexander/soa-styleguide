@@ -1,1 +1,186 @@
-hello styleguide
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SoA Styleguide</title>
+	<link href="style.css" rel="stylesheet">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+	<section class='content'>
+
+		<div class='reference'>
+			<div class='heading'>Reference</div>
+			<div class='text-block'>
+				<div class='text'>These pages are useful for understanding interactions, responsiveness and general styling:</div>
+				<div class='text'><a href='http://rishialexander.com/soa/home.html'>Home page example</a></div>
+				<div class='text'><a href='http://rishialexander.com/soa/inner-1.html'>Inner page example</a></div>
+			</div>
+			<div class='text-block'>
+				<div class='text'>Here are the stylesheets and scripts used in the examples above:</div>
+				<div class='text'><a href='https://github.com/rishialexander/soa/tree/gh-pages/assets'>Stylesheets and scripts</a></div>
+			</div>
+		</div>
+
+		<div class='colors'>
+			<div class='heading'>Colors</div>		
+			<div class='color-blocks'>
+				<div class='text'>The main colors are black and white, used for text and section backgrounds.</div>
+				<div class='color-row'>
+					<div class='color'>
+						<div class='black color-block'>
+							<div class='color-description'>
+								<div class='color-name'>black</div>
+								<div class='color-hex'>000000</div>
+							</div>
+						</div>
+					</div>
+					<div class='color'>
+						<div class='white color-block'>
+							<div class='color-description'>
+								<div class='color-name'>white</div>
+								<div class='color-hex'>FFFFFF</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='text'>Purple, pink and light gray are accent colors. Purple is used for top-level headings, pink is used as a rollover color for links, and light gray is used for details, like in link underlines.</div>
+				<div class='color-row'>
+					<div class='color'>
+						<div class='purple color-block'>
+							<div class='color-description'>
+								<div class='color-name'>purple</div>
+								<div class='color-hex'>4B2D83</div>
+							</div>
+						</div>
+					</div>
+					<div class='color'>
+						<div class='pink color-block'>
+							<div class='color-description'>
+								<div class='color-name'>pink</div>
+								<div class='color-hex'>A93C96</div>
+							</div>
+						</div>
+					</div>
+					<div class='color'>
+						<div class='light-gray color-block'>
+							<div class='color-description'>
+								<div class='color-name'>light gray</div>
+								<div class='color-hex'>BBBBBB</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='text'>Dark gray is used for the page and footer backgrounds.</div>
+				<div class='color-row'>
+					<div class='color'>
+						<div class='dark-gray color-block'>
+							<div class='color-description'>
+								<div class='color-name'>dark gray</div>
+								<div class='color-hex'>333333</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='items'>
+			<div class='heading'>Styling</div>
+			<div class='item'>
+				<div class='item-name'>Header</div>
+				<div class='text'>See <a href='http://rishialexander.com/soa/inner-1.html'>interactive example</a></div>
+				<div class='text'>See <a href='https://github.com/rishialexander/soa/blob/gh-pages/assets/_header.scss'>stylesheet</a></div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Footer</div>
+				<div class='text'>See <a href='http://rishialexander.com/soa/inner-1.html'>interactive example</a></div>
+				<div class='text'>See <a href='https://github.com/rishialexander/soa/blob/gh-pages/assets/_footer.scss'>stylesheet</a></div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Primary navigation (with dropdowns)</div>
+				<div class='text'>See <a href='http://rishialexander.com/soa/inner-1.html'>interactive example</a></div>
+				<div class='text'>See <a href='https://github.com/rishialexander/soa/blob/gh-pages/assets/_menu.scss'>stylesheet</a></div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Content area background</div>
+				<div class='text'>See <a href='http://rishialexander.com/soa/inner-1.html'>interactive example</a></div>
+				<div class='text'>See <a href='https://github.com/rishialexander/soa/blob/gh-pages/assets/_hero.scss'>stylesheet</a></div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Page title (level one heading)</div>
+				<div class='item-spec'><h1>Heading 1</h1></div>
+				<div class='text'>See <a href='https://github.com/rishialexander/soa/blob/gh-pages/assets/_content-inner-1.scss#L2-L7'>stylesheet</a></div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Headings, levels two through six</div>
+				<div class='item-spec'><h2>Heading 2</h2></div>
+				<div class='item-spec'><h3>Heading 3</h3></div>
+				<div class='no-item'>Heading 4 not used</div>
+				<div class='no-item'>Heading 5 not used</div>
+				<div class='no-item'>Heading 6 not used</div>
+				<div class='text'>See <a href='https://github.com/rishialexander/soa/blob/gh-pages/assets/_content-inner-1.scss#L9-L27'>stylesheet</a></div>		
+			</div>
+			<div class='item'>
+				<div class='item-name'>Images within content area</div>
+				<div class='no-item'>(No styling?)</div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Text and links within content area</div>
+				<div class='item-spec'><p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lobortis congue mi, ut lobortis enim aliquet vel. Nullam faucibus feugiat tellus ut feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur consectetur eu lacus et suscipit. Sed vel suscipit dui. And here is <a href='#'>a link</a>. How about <a href='#'>another link</a>?</p></div>
+				<div class='text'>See <a href='https://github.com/rishialexander/soa/blob/gh-pages/assets/_content-inner-1.scss#L29-L37'>stylesheet for text</a></div>
+				<div class='text'>See <a href='https://github.com/rishialexander/soa/blob/gh-pages/assets/_content-inner-1.scss#L158-L167'>stylesheet for links</a></div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Text and links within tag area</div>
+				<div class='no-item'>(What is this?)</div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Blockquotes/callouts</div>
+				<div class='no-item'>Not used</div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Tables (including header cells, odd and even rows)</div>
+				<div class='no-item'>Not used</div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Ordered lists</div>
+				<div class='no-item'>Not used</div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Numbered lists</div>
+				<div class='no-item'>Not used</div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Sidebar block — section navigation</div>
+				<div class='text'>See <a href='http://rishialexander.com/soa/inner-1.html'>interactive example</a></div>
+				<div class='text'>See <a href='https://github.com/rishialexander/soa/blob/gh-pages/assets/_content-inner-1.scss#L117-L167'>stylesheet</a></div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Sidebar block — list</div>
+				<div class='no-item'>Not used</div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Sidebar block — general content</div>
+				<div class='text'>See <a href='http://rishialexander.com/soa/inner-1.html'>interactive example</a></div>
+				<div class='text'>See <a href='https://github.com/rishialexander/soa/blob/gh-pages/assets/_content-inner-1.scss#L169-L197'>stylesheet</a></div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>“Make a gift”/“Support us” button</div>
+				<div class='no-item'>(Need images)</div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Stay connected/social media icons</div>
+				<div class='no-item'>(Need images)</div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Form submit and cancel buttons</div>
+				<div class='no-item'>Not used</div>
+			</div>
+			<div class='item'>
+				<div class='item-name'>Form input fields</div>
+				<div class='no-item'>(Incomplete?)</div>
+			</div>
+		</div>
+	</section>
+</body>
