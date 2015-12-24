@@ -23,9 +23,6 @@
   display: table;
   clear: both; }
 
-html, body {
-  height: 100%; }
-
 html {
   -webkit-text-size-adjust: 100%; }
 
@@ -48,7 +45,7 @@ body {
 
 .nav {
   position: fixed;
-  top: 180px;
+  top: 196px;
   left: 64px; }
   @media (max-width: 600px) {
     .nav {
@@ -70,8 +67,20 @@ body {
     font-weight: bold;
     background: #f3f3f3; }
 
+a.comp-item {
+  opacity: 0.5; }
+
+.comp-items {
+  margin: 0 0 0 16px; }
+  .comp-items li {
+    margin-bottom: 13px; }
+  .comp-items a.active {
+    color: #4b2d83;
+    opacity: 1;
+    font-weight: normal; }
+
 .main {
-  margin: 180px 0 200px 265px; }
+  margin: 180px 0 240px 285px; }
   @media (max-width: 600px) {
     .main {
       margin-left: 40px; } }

@@ -32,9 +32,9 @@
 	clear: both;
 }
 
-html, body {
-	height: 100%;
-}
+// html, body {
+// 	height: 100%;
+// }
 
 html {
 	-webkit-text-size-adjust: 100%;
@@ -79,7 +79,7 @@ $color-black: 	#000000;
 
 .nav {
 	position: fixed;
-	top: 180px;
+	top: 196px;
 	left: 64px;
 
 	@media (max-width: 600px) {
@@ -110,13 +110,33 @@ $color-black: 	#000000;
 	}
 }
 
+a.comp-item {
+	opacity: 0.5;
+}
+
+.comp-items {
+	margin: 0 0 0 16px;
+
+	li {
+		margin-bottom: 13px;
+	}
+
+	a.active {
+		// background: transparent;
+		color: $color-purple;
+		opacity: 1;
+		font-weight: normal;
+	}
+}
+
+
 
 ////////////////////////
 // MAIN ////////////////
 ////////////////////////
 
 .main {
-	margin: 180px 0 200px 265px;
+	margin: 180px 0 240px 285px;
 	
 	@media (max-width: 600px) {
 		margin-left: 40px;

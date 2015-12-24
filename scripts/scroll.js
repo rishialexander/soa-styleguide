@@ -10,6 +10,9 @@ $(document).ready(function () {
             $(this).removeClass('active');
         })
         $(this).addClass('active');
+        if ($(this).hasClass("comp-item")) {
+            $('#comp-list').addClass("active");
+        }
       
         var target = this.hash,
             menu = target;
@@ -28,9 +31,12 @@ function onScroll(event){
     $('.nav-links a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top - 200 <= scrollPos && refElement.position().top + refElement.height() - 300 > scrollPos) {
+        if (refElement.position().top - 50 <= scrollPos && refElement.position().top + refElement.height() - 50 > scrollPos) {
             $('.nav-links li a').removeClass("active");
             currLink.addClass("active");
+            if (currLink.hasClass("comp-item")) {
+                $('#comp-list').addClass("active");
+            }
         }
         else{
             // currLink.removeClass("active");
