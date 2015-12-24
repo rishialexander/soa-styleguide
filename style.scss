@@ -43,234 +43,290 @@ html {
 body {
 	margin: 0; 
 	font-family: 'Karla', 'Helvetica', sans-serif;
-	background: #f9f9f9;
 	color: #000;
+	font-size: 15px;
 }
 
-/////////////////////
-// GENERAL //////////	
-/////////////////////
+$color-purple: #4b2d83;
+$color-pink: 	#a93c96;
+$color-white: 	#ffffff;
+$color-lgray: 	#bbbbbb;
+$color-dgray: 	#333333;
+$color-black: 	#000000;
 
-.heading {
+
+////////////////////////
+// HEADER //////////////
+////////////////////////
+
+.header {
 	font-weight: bold;
-	font-size: 32px;
-	padding: 0 0 25px;
-	color: #444;
+	font-size: 24px;
+	color: $color-purple;
+	position: absolute;
+	left: 265px;
+	top: 60px;
+
+	@media (max-width: 600px) {
+		left: 40px;
+	} 
 }
 
-.text-block {
-	margin: 0 0 30px;
 
-	&:last-child {
-		margin: 0;
-	}
+////////////////////////
+// NAVIGATION //////////
+////////////////////////
+
+.nav {
+	position: fixed;
+	top: 180px;
+	left: 64px;
+
+	@media (max-width: 600px) {
+		display: none;
+	} 
 }
 
-.text {
-	font-size: 16px;
-	margin: 4px 0 4px;
-	line-height: 1.5;
-	clear: both;
-	color: #444;
+.nav-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 
-	a {
-		color: #A93C96;
-	}
-}
-
-/////////////////////
-// SECTIONS /////////	
-/////////////////////
-
-.content {
-	padding: 60px 20px 60px;
-	max-width: 600px;
-	margin-left: 200px;
-
-	@media (max-width: 800px) {
-		margin-left: 0;
-	}
-}
-
-.introduction {
-	padding: 0 0 75px;
-}
-
-.reference {
-	padding: 0 0 75px;
-}
-
-.colors {
-	padding: 0 0 75px;
-}
-
-/////////////////////
-// ITEMS ////////////	
-/////////////////////
-
-.item {
-	margin-bottom: 40px;
-
-	.text {
-		padding-left: 30px;
-	}
-}
-
-.item-name {
-	font-size: 20px;
-	font-weight: bold;
-	margin: 10px 0 10px;
-	color: #444;
-}
-
-.no-item {
-	font-size: 16px;
-	font-style: italic;
-	color: #999;
-	padding-left: 30px;
-}
-
-.item-spec {
-	padding-left: 30px;
-
-	h1 {
-		color: #4b2d83;
-		font-size: 32px;
-		letter-spacing: -0.5px;
-		margin: 14px 0 34px;
-	}
-
-	h2 {
-		font-size: 14px;
-		margin: 0;
-		line-height: 1.5;
-
-		@media (min-width: 1000px) {
-			font-size: 15px;
-		}
-	}
-
-	h3 {
-		font-size: 14px;
-		line-height: 1.5;
-		margin: 0;
-
-		@media (min-width: 1000px) {
-			font-size: 15px;
-		}
-	}
-
-	p {
-		font-size: 14px;
-		margin: 0 0 21px;
-		line-height: 1.5;
-
-		@media (min-width: 1000px) {
-			font-size: 15px;
-		}
+	li {
+		font-size: 16px;
+		margin-bottom: 15px;
 	}
 
 	a {
-		color: #000;
 		text-decoration: none;
-		border-bottom: 1px solid #ccc;
-
-		&:hover {
-			color: #a93c96;
-			border-bottom: 1px solid #a93c96;	
-		}
+		color: $color-purple;
+		padding: 6px 9px;
+		border-radius: 2px;
 	}
 
-	select {
-		// border-radius: 5px;
-		// border: 1px solid #bbb;
-		// background: #fff;
-		// height: 25px;
-		// width: 180px;
-		// font-family: 'Karla';
+	.active {
+		font-weight: bold;
+		background: #f3f3f3;
 	}
 }
 
-/////////////////////
-// COLORS ///////////	
-/////////////////////
 
-.color-blocks {
-	padding: 0 0 25px;
+////////////////////////
+// MAIN ////////////////
+////////////////////////
 
-	&:last-child {
-		padding: 0;
-	}
-}
-
-.color-row {
-	height: 100px;
-	margin: 10px 0 45px;
-}
-
-.color {
-	float: left;
-	margin-right: 16px;
-
+.main {
+	margin: 180px 0 200px 265px;
+	
 	@media (max-width: 600px) {
-		margin-right: 8px;
+		margin-left: 40px;
+	} 
+}
+
+article {
+	margin-bottom: 160px;
+}
+
+p {
+	max-width: 480px;
+	line-height: 22px;
+}
+
+a {
+	color: $color-pink;
+
+	&:visited {
+		color: $color-purple;
 	}
 }
 
-.color-block {
-	width: 125px;
-	height: 100px;
-	box-sizing: border-box;
-	border-radius: 2px;
+img {
+	max-width: 850px;
+	margin: 30px 0 60px;
+}
 
-	@media (max-width: 600px) {
-		width: 85px;
+h1, h2, h3 {
+	color: $color-purple;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 40px;
+	margin: 0 0 32px;
+	letter-spacing: -0.5px;
+}
+
+h2 {
+	font-size: 28px;
+	margin: 50px 0 20px;
+	letter-spacing: -0.5px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+hr {
+	border-style: solid;
+	height: 0;
+	width: 850px;
+	border: none;
+	border-top: 1px solid #ddd;
+	margin: 20px 0 50px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	text-align: left;
+	padding: 10px 12px;
+}
+
+th {
+	padding-bottom: 12px;
+}
+
+td {
+	height: 40px;
+}
+
+tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.no-dots {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+.table-description {
+	width: 350px;
+	margin: 0;
+}
+
+.button {
+	display: inline-block;
+	margin: 10px 0 0;
+	color: #000;
+	text-decoration: none;
+	background: #f5f5f5;
+	padding: 5px 11px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+
+	&:hover {
+		background: #e9e9e9;
+		border-color: #999
+	}
+
+	&:active {
+		box-shadow: inset 0 3px 6px 0 rgba(0, 0, 0, 0.1);
 	}
 }
 
-.purple {
-	background-color: #4b2d83;
+.button-disabled {
+	color: #aaa;
+	pointer-events: none;
 }
 
-.pink {
-	background-color: #a93c96;
-}
-
-.black {
-	background-color: #000;
-}
-
-.dark-gray {
-	background-color: #333;
-}
-
-.light-gray {
-	background-color: #bbb;
-}
-
-.white {
-	background-color: #fff;
-	border: 1px solid #ddd;
-
-	.color-description {
-		color: #000;
-	}
-}
-
-.color-description {
-	font-size: 14px;
-	position: relative;
-	left: 8px;
-	top: 56px;
-	color: #fff;
-}
+// COLOR TABLE /////////
 
 .color-name {
-	font-weight: bold;
+	width: 120px;
+}
+
+.color-color {
+	width: 100px;
 }
 
 .color-hex {
+	width: 100px;
+}
 
+.color-usage {
+	width: 350px;
+}
+
+.color-sample {
+	width: 80px;
+	height: 40px;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+.color-purple {
+	background-color: $color-purple;
+}
+
+.color-pink {
+	background-color: $color-pink;
+}
+
+.color-white {
+	background-color: $color-white;
+	border: 1px solid #ddd;
+}
+
+.color-lgray {
+	background-color: $color-lgray;
+}
+
+.color-dgray {
+	background-color: $color-dgray;
+}
+
+.color-black {
+	background-color: $color-black;
+}
+
+// TYPOGRAPHY TABLE ////
+
+.type-element {
+	width: 300px;
+}
+
+.type-specs {
+	width: 150px;
+}
+
+.type-description {
+	width: 350px;
+}
+
+.unspecified {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 15px;
+	color: #999;
+	margin: 10px 0;
+}
+
+
+////////////////////////
+// SITE-SPECIFIC ///////
+////////////////////////
+
+h1.site, h2.site, h3.site, h4.site, h5.site, p.site {
+	margin: 0;
+}
+
+h2.site, h3.site, h4.site, h5.site {
+	font-size: 15px;
+	color: $color-black;
+}
+
+h1.site {
+	font-size: 32px;
+	color: $color-purple;
+}
+
+p.site {
+	width: 300px;
 }
 
 
