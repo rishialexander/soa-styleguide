@@ -37,8 +37,8 @@ body {
   font-size: 24px;
   color: #4b2d83;
   position: absolute;
-  left: 265px;
-  top: 60px; }
+  left: 285px;
+  top: 75px; }
   @media (max-width: 600px) {
     .header {
       left: 40px; } }
