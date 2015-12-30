@@ -49,8 +49,10 @@ body {
 
 $color-purple: #4b2d83;
 $color-pink: 	#a93c96;
+$color-beige:	#a09986;
 $color-white: 	#ffffff;
-$color-lgray: 	#bbbbbb;
+$color-lgray: 	#cccccc;
+$color-mgray:	#999999;
 $color-dgray: 	#333333;
 $color-black: 	#000000;
 
@@ -372,6 +374,10 @@ tr {
 	background-color: $color-pink;
 }
 
+.color-beige {
+	background-color: $color-beige;
+}
+
 .color-white {
 	background-color: $color-white;
 	border: 1px solid #ddd;
@@ -380,6 +386,11 @@ tr {
 .color-lgray {
 	background-color: $color-lgray;
 }
+
+.color-mgray {
+	background-color: $color-mgray;
+}
+
 
 .color-dgray {
 	background-color: $color-dgray;
@@ -407,7 +418,7 @@ tr {
 	font-style: italic;
 	font-weight: normal;
 	font-size: 15px;
-	color: #999;
+	color: $color-mgray;
 	margin: 10px 0;
 }
 
@@ -480,3 +491,50 @@ blockquote.site {
 	padding: 28px 0;
 	margin: 0;
 }
+
+
+.tag-text.site {
+	font-size: 12px;
+	color: $color-mgray;
+}
+
+.tag-link.site {
+	font-size: 12px;
+	color: $color-purple;
+
+	&:hover {
+		color: $color-pink;
+	}
+}
+
+
+ul.site {
+	padding: 0;
+	margin: 0;
+	line-height: 28px;
+
+	li {
+		padding-left: 24px;
+		margin-bottom: 0;
+		// margin-bottom: 4px;
+	}
+
+	li:before {
+		content: "•";
+		color: $color-lgray;
+		padding-right: 10px;
+	}
+}
+
+ol.site {
+	line-height: 28px;
+	margin: 0;
+
+	li {
+		margin-bottom: 0;
+	}
+}
+
+
+
+

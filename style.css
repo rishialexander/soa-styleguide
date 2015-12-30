@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Karla';
   src: url("fonts/Karla/Karla-Regular.ttf");
@@ -147,7 +148,7 @@ li {
 a {
   color: #4b2d83;
   text-decoration: none;
-  border-bottom: 1px solid #bbbbbb; }
+  border-bottom: 1px solid #cccccc; }
   a:visited {
     color: #4b2d83; }
   a:hover {
@@ -254,12 +255,18 @@ tr {
 .color-pink {
   background-color: #a93c96; }
 
+.color-beige {
+  background-color: #a09986; }
+
 .color-white {
   background-color: #ffffff;
   border: 1px solid #ddd; }
 
 .color-lgray {
-  background-color: #bbbbbb; }
+  background-color: #cccccc; }
+
+.color-mgray {
+  background-color: #999999; }
 
 .color-dgray {
   background-color: #333333; }
@@ -280,7 +287,7 @@ tr {
   font-style: italic;
   font-weight: normal;
   font-size: 15px;
-  color: #999;
+  color: #999999;
   margin: 10px 0; }
 
 h1.site, h2.site, h3.site, h4.site, h5.site, h6.site, p.site {
@@ -338,5 +345,33 @@ blockquote.site {
   letter-spacing: -0.5px;
   padding: 28px 0;
   margin: 0; }
+
+.tag-text.site {
+  font-size: 12px;
+  color: #999999; }
+
+.tag-link.site {
+  font-size: 12px;
+  color: #4b2d83; }
+  .tag-link.site:hover {
+    color: #a93c96; }
+
+ul.site {
+  padding: 0;
+  margin: 0;
+  line-height: 28px; }
+  ul.site li {
+    padding-left: 24px;
+    margin-bottom: 0; }
+  ul.site li:before {
+    content: "•";
+    color: #cccccc;
+    padding-right: 10px; }
+
+ol.site {
+  line-height: 28px;
+  margin: 0; }
+  ol.site li {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
