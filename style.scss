@@ -44,7 +44,7 @@ body {
 	margin: 0; 
 	font-family: 'Karla', 'Helvetica', sans-serif;
 	color: #000;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 $color-purple: #4b2d83;
@@ -137,6 +137,10 @@ $color-black: 	#000000;
 		padding: 6px 9px;
 		border-radius: 2px;
 		border-bottom: none;
+
+		&:hover {
+			color: $color-pink;
+		}
 	}
 
 	.active {
@@ -213,6 +217,16 @@ p {
 	line-height: 24px;
 }
 
+ul {
+	line-height: 24px;
+	max-width: 520px;
+	padding-left: 20px;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
 a {
 	color: $color-purple;
 	text-decoration: none;
@@ -220,6 +234,10 @@ a {
 
 	&:visited {
 		color: $color-purple;
+	}
+
+	&:hover {
+		color: $color-pink;
 	}
 }
 
@@ -284,6 +302,10 @@ tr {
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
+
+	li {
+		margin-bottom: 2px;
+	}
 }
 
 .table-description {

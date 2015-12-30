@@ -200,8 +200,13 @@
 					<th><div class='type-description'>Comments</div></th>
 				</tr>
 				<tr>
-					<td>Link</td>
-					<td><div class='unspecified'>Unspecified</div></td>
+					<td><a id='link-test' class='site' href='#link-test'>I'm a link, click me</a></td>
+					<td>	
+						<ul class='no-dots'>
+							<li>16px purple</li>
+							<li>1px light gray underline</li>
+							<li>pink on hover</li>
+						</ul></td>
 					<td><p class='table-description'></p></td>
 				</tr>
 				<tr>
@@ -307,17 +312,39 @@
 		<article id='layout'>
 			<h1 id='layout'>Layout</h1>
 			<h3>Desktop</h3>
-			<p>This is the structure for a typical page featuring an article. The article has a maximum width to prevent the line lengths from becoming too long. The sidebar has a smaller maximum width. It's aligned to the top edge of the article and sticks to the right edge of the article. The article and sidebar peek above the page fold and sit on top of the background image. The background image is a curated photo of an artwork and fills the entire page up to the fold. Below the fold, the background is a dark gray fill. All of the content is aligned to the same left margin regardless of screen size. This includes the header, the logo, the article, and the footer.</p>
+			<p>This is the structure for a typical page featuring an article.</p>
+			<ul>
+				<li>The article has a maximum width to prevent the line lengths from becoming too long.</li>
+				<li>The sidebar has a smaller maximum width. It's aligned to the top edge of the article and sticks to the right edge of the article.</li>
+				<li>The background image is a curated photo of an artwork and fills the entire page up to the fold. Below the fold, the background is a dark gray fill. The article and sidebar peek above the page fold and sit on top of the background image.</li>
+				<li>All of the content is aligned to the same left margin regardless of screen size. This includes the header, the logo, the article, and the footer.</li>
+			</ul>
 			<img src='images/layout-desktop.png' />
+			<h3>Tablet</h3>
+			<p>On tablet, the content is almost identical but there are significant visual changes to accommodate the smaller screen size.</p>
+			<ul>
+				<li>The spacing inside and outside of each column is reduced to fit both columns on a tablet.</li>
+				<li>The links in the header are replaced with a hamburger button &#9776; for the mobile navigation menu.</li>
+				<li>The logo is smaller than on desktop.</li>
+				<li>The footer is collapsed into two columns.</li>
+			</ul>
+			<img src='images/layout-tablet.png' />
 			<h3>Mobile</h3>
-			<p>On mobile, the content is almost identical but there are some significant visual changes to accommodate the small screen size. All of the content is collapsed to a single column. The links in the header are replaced with a hamburger button &#9776; for the mobile navigation menu. The logo is smaller. The background image is shrinks with the width of the page, but it has a minimum size so that it crops instead of filling the page. The sidebar is positioned below the article.</p>
+			<p>On mobile, there are additional visual changes to accommodate the smallest screen sizes.</p>
+			<ul>
+				<li>All of the content is collapsed to a single column that spans the width of the screen.</li>
+				<li>The links in the header are replaced with a hamburger button &#9776; for the mobile navigation menu.</li>
+				<li>The logo is smaller than on desktop.</li>
+				<li>The background image is shrinks with the width of the page, but it has a minimum size so that it crops instead of filling the page.</li>
+				<li>The sidebar is positioned below the article.</li>
+			</ul>
 			<img src='images/layout-mobile.png' />
 		</article>
 		<article id='resources'>
 			<h1 id='resources'>Resources</h1>
 			<h2>Assets</h2>
 			<p>This download pack (coming soon) contains all of the logos, icons and typefaces used within the site.</p>
-			<p><a class='button button-disabled'>Download all assets</a></p>
+			<p><a class='button button-disabled'>Download all assets (coming soon)</a></p>
 			<h2>Interactive prototypes</h2>
 			<p>The prototypes below are designed to demonstrate the interactive and responsive aspects of the website. They are also helpful for understanding how all of the parts fit together.</p>
 			<p><a href='http://rishialexander.com/soa/home.html'>Home page prototype</a></p>
