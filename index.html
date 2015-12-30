@@ -8,7 +8,20 @@
 </head>
 <body>
 	<section class='header'>
-		SCHOOL OF ART + ART HISTORY + DESIGN Styleguide
+		<div class='uw-logo-container'>
+			<a href='http://www.washington.edu/'><img class='uw-logo' src='images/uw-logo-l.png'></a>
+		</div>
+		<div class='uw-links-container'>
+			<ul class='uw-links'>
+				<li><a href='#'>UW Home</a> / </li>
+				<li><a href='#'>College of Arts & Sciences</a> /</li>
+				<li><a href='#'>ArtsUW</a> / </li>
+				<li><a href='#'>Directories</a> / </li>
+				<li><a href='#'>Maps</a> / </li>
+				<li><a href='#'>MyUW</a> / </li>
+				<li><a href='#'>Search</a></li>
+			</ul>
+		</div>
 	</section>
 	<section class='nav'>
 		<ul class='nav-links'>
@@ -33,7 +46,14 @@
 		<article id='overview'>
 			<h1 id='overview'>Overview</h1>
 			<p>This is the style guide for the forthcoming School of Art + Art History + Design website. It provides tools, assets and guidance to streamline the workflow between designers and developers, and maintain a consistency in style across the entire site.</p>
-			<p>The style guide was last updated on December 23, 2015. For more information, contact Rishi Agarwal (<a href='mailto:rishialexander@gmail.com'>rishialexander@gmail.com</a>).</p>
+			<p>The style guide was last updated on December 29, 2015. For more information, contact Rishi Agarwal (<a href='mailto:rishialexander@gmail.com'>rishialexander@gmail.com</a>).</p>
+
+			<div class='screengrabs'>
+				<img class='screengrab' src='images/screengrab-1.png'>
+				<img class='screengrab' src='images/screengrab-2.png'>
+				<img class='screengrab' src='images/screengrab-3.png'>
+				<img class='screengrab' src='images/screengrab-4.png'>
+			</div>
 		</article>
 		<article id='colors'>
 			<h1>Colors</h1>
@@ -96,20 +116,20 @@
 					<td><h1 class='site'>Page Title</h1></td>
 					<td>
 						<ul class='no-dots'>
-							<li>32px bold purple</li>
-							<li>38px line-height</li>
-							<li>-0.5px letter-spacing</li>
+							<li>35px bold black</li>
+							<li>35px line-height</li>
+							<li>0.1px letter-spacing</li>
 						</ul>
 					</td>
 					<td><p class='table-description'>The page title is an H1 element. It should only be used once per page.</p></td>
 				</tr>
 				<tr>
-					<td><h2 class='site'>SECOND LEVEL HEADING</h2></td>
+					<td><h2 class='site'>Second Level Heading</h2></td>
 					<td>
 						<ul class='no-dots'>
-							<li>15px bold black</li>
-							<li>22px line-height</li>
-							<li>uppercase</li>
+							<li>24px bold black</li>
+							<li>35px line-height</li>
+							<li>-0.5px letter-spacing</li>
 						</ul>
 					</td>
 					<td><p class='table-description'>Used after a page title in the document hierarchy.</p></td>
@@ -118,32 +138,55 @@
 					<td><h3 class='site'>Third Level Heading</h3></td>
 					<td>
 						<ul class='no-dots'>
-							<li>15px bold black</li>
-							<li>22px line-height</li>
+							<li>20px normal black</li>
+							<li>35px line-height</li>
+							<li>-0.2px letter spacing</li>
 						</ul>
 					</td>
 					<td><p class='table-description'>Used after an H2 element in the document hierarchy.</p></td>
 				</tr>
 				<tr>
-					<td><h4 class='unspecified'>Fourth Level Heading</h4></td>
-					<td class='unspecified'>Unspecified</td>
+					<td><h4 class='site'>FOURTH LEVEL HEADING</h4></td>
+					<td>
+						<ul class='no-dots'>
+							<li>15px bold black</li>
+							<li>35px line-height</li>
+							<li>1px letter spacing</li>
+							<li>uppercase</li>
+						</ul>
+					</td>
 					<td><p class='table-description'>Used after an H3 element in the document hierarchy.</p></td>
 				</tr>
 				<tr>
-					<td><h5 class='unspecified'>Fifth Level Heading</h5></td>
-					<td class='unspecified'>Unspecified</td>
+					<td><h5 class='site'>Fifth Level Heading</h5></td>
+					<td>
+						<ul class='no-dots'>
+							<li>15px bold black</li>
+							<li>35px line-height</li>
+						</ul>
+					</td>
+					<td><p class='table-description'>Used after an H4 element in the document hierarchy.</p></td>
+				</tr>
+				<tr>
+					<td><h6 class='site'>Sixth Level Heading</h6></td>
+					<td>
+						<ul class='no-dots'>
+							<li>15px italic bold black</li>
+							<li>35px line-height</li>
+						</ul>
+					</td>
 					<td><p class='table-description'>Used after an H4 element in the document hierarchy.</p></td>
 				</tr>
 				<tr>
 					<td>
 						<p class='site'>
-							Body text. This is what a normal paragraph looks like. It's set in Karla at 15px with a line height of 22px. It's black.
+							Body text. This is what a normal paragraph looks like. It's set in Karla at 16px with a line height of 24px. It's black.
 						</p>
 					</td>
 					<td>
 						<ul class='no-dots'>
-							<li>15px black</li>
-							<li>22px line-height</li>
+							<li>16px black</li>
+							<li>24px line-height</li>
 						</ul>
 					</td>
 					<td><p class='table-description'></p></td>
@@ -172,8 +215,15 @@
 					<td><p class='table-description'></p></td>
 				</tr>
 				<tr>
-					<td>Blockquote</td>
-					<td><div class='unspecified'>Unspecified</div></td>
+					<td><blockquote class='site'>This is a sample pull quote.</blockquote></td>
+					<td>
+						<ul class='no-dots'>
+							<li>24px centered black</li>
+							<li>29px line-height</li>
+							<li>-0.5px letter spacing</li>
+							<li>28px 0px padding</li>
+						</ul>
+					</td>
 					<td><p class='table-description'></p></td>
 				</tr>
 				<tr>
@@ -233,7 +283,7 @@
 				<p>The sidebar makes it easy to find information about the current page, or access related pages. The topmost sidebar section contains links to the parent page, the parent page's siblings, and the current page's siblings. The sidebar section below it contains important information that is directly related to the current article.</p>
 				<img src='images/sidebar-desktop.png' />
 				<h3>Mobile</h3>
-				<p>On mobile the entire page collapses to a single column. The sidebar appears directly below the main article. The line height for the links is increased to accomodate finger taps.</p>
+				<p>On mobile the entire page collapses to a single column. The sidebar appears directly below the main article. The line height for the links is increased to accommodate finger taps.</p>
 				<img src='images/sidebar-mobile.png' />
 				<hr>
 			</div>
@@ -252,7 +302,6 @@
 				<h3>Mobile</h3>
 				<p>On mobile, the footer is collapsed into a single column. All of the content remains the same.</p>
 				<img src='images/footer-mobile.png' />
-				<hr>
 			</div>
 		</article>
 		<article id='layout'>
@@ -261,7 +310,7 @@
 			<p>This is the structure for a typical page featuring an article. The article has a maximum width to prevent the line lengths from becoming too long. The sidebar has a smaller maximum width. It's aligned to the top edge of the article and sticks to the right edge of the article. The article and sidebar peek above the page fold and sit on top of the background image. The background image is a curated photo of an artwork and fills the entire page up to the fold. Below the fold, the background is a dark gray fill. All of the content is aligned to the same left margin regardless of screen size. This includes the header, the logo, the article, and the footer.</p>
 			<img src='images/layout-desktop.png' />
 			<h3>Mobile</h3>
-			<p>On mobile, the content is almost identical but there are some significant visual changes to accomodate the small screen size. All of the content is collapsed to a single column. The links in the header are replaced with a hamburger button &#9776; for the mobile navigation menu. The logo is smaller. The background image is shrinks with the width of the page, but it has a minimum size so that it crops instead of filling the page. The sidebar is positioned below the article.</p>
+			<p>On mobile, the content is almost identical but there are some significant visual changes to accommodate the small screen size. All of the content is collapsed to a single column. The links in the header are replaced with a hamburger button &#9776; for the mobile navigation menu. The logo is smaller. The background image is shrinks with the width of the page, but it has a minimum size so that it crops instead of filling the page. The sidebar is positioned below the article.</p>
 			<img src='images/layout-mobile.png' />
 		</article>
 		<article id='resources'>

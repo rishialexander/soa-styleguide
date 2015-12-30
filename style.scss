@@ -60,16 +60,50 @@ $color-black: 	#000000;
 ////////////////////////
 
 .header {
-	font-weight: bold;
-	font-size: 24px;
-	color: $color-purple;
+	background-color: #fff;
+	height: 60px;
+	position: relative;
+}
+
+.uw-logo {
 	position: absolute;
-	left: 285px;
-	top: 75px;
+	height: 75%;
+	bottom: 0;
+	left: 56px;
+	margin: 0;
 
 	@media (max-width: 600px) {
-		left: 40px;
-	} 
+		left: 28px;
+	} 	
+}
+
+.uw-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	position: absolute;
+	right: 38px;
+	top: 36%;
+
+	li {
+		display: inline;
+		color: #999;
+	}
+
+	li > a {
+		color: #999;
+		text-decoration: none;
+		border-bottom: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@media (max-width: 960px) {
+		display: none;
+	}
 }
 
 
@@ -79,8 +113,8 @@ $color-black: 	#000000;
 
 .nav {
 	position: fixed;
-	top: 196px;
-	left: 64px;
+	top: 164px;
+	left: 54px;
 
 	@media (max-width: 600px) {
 		display: none;
@@ -102,6 +136,7 @@ $color-black: 	#000000;
 		color: $color-purple;
 		padding: 6px 9px;
 		border-radius: 2px;
+		border-bottom: none;
 	}
 
 	.active {
@@ -132,11 +167,35 @@ a.comp-item {
 
 
 ////////////////////////
+// INTRO ///////////////
+////////////////////////
+
+
+.screengrabs {
+	width: 800px;
+	margin: 45px 0 0;
+	overflow: hidden;
+}
+
+.screengrab {
+	display: block;
+	float: left;
+	width: 48.75%;
+	box-sizing: border-box;
+	margin: 0 0 2.5%;
+
+	&:nth-child(odd) {
+		margin-right: 2.5%;
+	}
+
+}
+
+////////////////////////
 // MAIN ////////////////
 ////////////////////////
 
 .main {
-	margin: 180px 0 240px 285px;
+	margin: 90px 0 240px 285px;
 	
 	@media (max-width: 600px) {
 		margin-left: 40px;
@@ -145,15 +204,19 @@ a.comp-item {
 
 article {
 	margin-bottom: 160px;
+	overflow: hidden;
 }
 
 p {
-	max-width: 480px;
-	line-height: 22px;
+	max-width: 520px;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 a {
-	color: $color-pink;
+	color: $color-purple;
+	text-decoration: none;
+	border-bottom: 1px solid $color-lgray;
 
 	&:visited {
 		color: $color-purple;
@@ -331,23 +394,67 @@ tr {
 // SITE-SPECIFIC ///////
 ////////////////////////
 
-h1.site, h2.site, h3.site, h4.site, h5.site, p.site {
+h1.site, h2.site, h3.site, h4.site, h5.site, h6.site, p.site {
 	margin: 0;
 }
 
-h2.site, h3.site, h4.site, h5.site {
-	font-size: 15px;
+h1.site {
+	font-size: 35px;
+	font-weight: bold;
 	color: $color-black;
+	line-height: 35px;
+	letter-spacing: 0.1px;
 }
 
-h1.site {
-	font-size: 32px;
-	color: $color-purple;
+h2.site {
+	font-size: 24px;
+	font-weight: bold;
+	color: $color-black;
+	line-height: 35px;
+	letter-spacing: -0.5px;
+}
+
+h3.site {
+	font-size: 20px;
+	font-weight: normal;
+	color: $color-black;
+	line-height: 35px;
+	letter-spacing: -0.2px;	
+}
+
+h4.site {
+	font-size: 15px;
+	font-weight: bold;
+	color: $color-black;
+	line-height: 35px;
+	letter-spacing: 1px;	
+}
+
+h5.site {
+	font-size: 15px;
+	font-weight: bold;
+	color: $color-black;
+	line-height: 35px;
+}
+
+h6.site {
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	color: $color-black;
+	line-height: 35px;
 }
 
 p.site {
 	width: 300px;
 }
 
-
-
+blockquote.site {
+	font-size: 25px;
+	line-height: 29px;
+	color: $color-black;
+	text-align: center;
+	letter-spacing: -0.5px;
+	padding: 28px 0;
+	margin: 0;
+}
