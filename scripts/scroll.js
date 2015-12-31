@@ -18,11 +18,15 @@ $(document).ready(function () {
         var target = this.hash,
             menu = target;
         $target = $(target);
+
+        // $(".nav").addClass("nav-fixed");
+
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top-50
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
+            
         });
     });
 });
@@ -39,13 +43,19 @@ function onScroll(event){
                 $('#comp-list').addClass("active");
             }
 
-            var hash = currLink.attr('href');
-            changeHashWithoutScrolling(hash);
+            // var hash = currLink.attr('href');
+            // changeHashWithoutScrolling(hash);
         }
         else{
             // currLink.removeClass("active");
         }
     });
+
+    // if ($(document).scrollTop() > 136) {
+    //     $(".nav").addClass("nav-fixed");
+    // } else {
+    //     $(".nav").removeClass("nav-fixed");
+    // }
 }
 
 function changeHashWithoutScrolling(hash) {

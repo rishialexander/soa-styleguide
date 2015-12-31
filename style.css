@@ -34,8 +34,8 @@ body {
   font-size: 16px; }
 
 .header {
-  background-color: #fff;
-  height: 60px;
+  background-color: #ffffff;
+  height: 30px;
   position: relative; }
 
 .uw-logo {
@@ -55,12 +55,12 @@ body {
   font-size: 13px;
   position: absolute;
   right: 38px;
-  top: 36%; }
+  top: 15%; }
   .uw-links li {
     display: inline;
-    color: #999; }
+    color: #999999; }
   .uw-links li > a {
-    color: #999;
+    color: #999999;
     text-decoration: none;
     border-bottom: none; }
     .uw-links li > a:hover {
@@ -69,13 +69,23 @@ body {
     .uw-links {
       display: none; } }
 
+.soa-logo {
+  position: absolute;
+  width: 440px;
+  top: 40px;
+  left: 60px; }
+
 .nav {
   position: fixed;
-  top: 154px;
+  top: 200px;
   left: 54px; }
   @media (max-width: 600px) {
     .nav {
       display: none; } }
+
+.nav-fixed {
+  position: fixed;
+  top: 64px; }
 
 .nav-links {
   list-style-type: none;
@@ -123,7 +133,7 @@ a.comp-item {
     margin-right: 2.5%; }
 
 .main {
-  margin: 80px 0 240px 285px; }
+  margin: 156px 0 240px 285px; }
   @media (max-width: 600px) {
     .main {
       margin-left: 40px; } }
