@@ -341,6 +341,7 @@ tr {
 	pointer-events: none;
 }
 
+
 // COLOR TABLE /////////
 
 .color-name {
@@ -399,6 +400,7 @@ tr {
 .color-black {
 	background-color: $color-black;
 }
+
 
 // TYPOGRAPHY TABLE ////
 
@@ -512,6 +514,7 @@ ul.site {
 	padding: 0;
 	margin: 0;
 	line-height: 28px;
+	list-style-type: none;
 
 	li {
 		padding-left: 24px;
@@ -536,5 +539,98 @@ ol.site {
 }
 
 
+// FORM ELEMENTS ///////
+
+select.site {
+	// -webkit-appearance: none;
+	// -moz-appearance: none;
+	font-family: 'Karla';
+	font-size: 12px;
+	height: 25px;
+	background: $color-white;
+	// background: url(images/caret.png) no-repeat right 6px top 8px;
+	// background-size: auto 35%;
+	border-radius: 5px;
+	border: 1px solid $color-lgray;
+	padding: 0 6px;
+}
+
+.all-forms {
+	margin: 30px 0 60px;
+}
+
+.site-input {
+	margin-bottom: 30px;
+}
+
+.group-label {
+	display: block;
+	font-size: 10px;
+	font-weight: bold;
+	color: $color-purple;
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+	margin: 0 0 3px;
+}
+
+.input-container {
+	font-size: 12px;
+}
+
+.input-item {
+	margin: 0 0 2px;
+}
+
+input[type=text].site {
+	border: 1px solid $color-lgray;
+	height: 25px;
+	box-sizing: border-box;
+	padding: 0 6px;
+}
+
+input[type=submit].site {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: $color-white;
+	font-family: 'Karla';
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+	color: #585858;
+	border: 1px solid #585858;
+	height: 32px;
+	padding: 0 8px;
+
+	&:active {
+		background: $color-white;
+		border-color: $color-dgray;
+		color: $color-black;
+	}
+}
+
+input[type=submit].site.alt-submit {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-family: 'Karla';
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: none;
+	letter-spacing: 0;
+	color: $color-black;
+	background: $color-white;
+	border: 1px solid $color-lgray;
+	height: 32px;
+	padding: 0 12px;
+	// outline: none;
+
+	&:active {
+		border-color: $color-mgray;
+	}
+}
 
 

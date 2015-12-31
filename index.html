@@ -30,13 +30,13 @@
 			<li><a href='#typography'>Typography</a></li>
 			<li><a id='comp-list' href='#components'>Components</a></li>
 			<div class='comp-items'>
-				<li><a class='comp-item' href='#comp-header'>Header</a></li>
-				<li><a class='comp-item' href='#comp-navigation'>Navigation</a></li>
-				<li><a class='comp-item' href='#comp-images'>Images</a></li>
-				<li><a class='comp-item' href='#comp-tables'>Tables</a></li>
-				<li><a class='comp-item' href='#comp-sidebars'>Sidebars</a></li>
-				<li><a class='comp-item' href='#comp-forms'>Forms</a></li>
-				<li><a class='comp-item' href='#comp-footer'>Footer</a></li>
+				<li><a class='comp-item' href='#header'>Header</a></li>
+				<li><a class='comp-item' href='#navigation'>Navigation</a></li>
+				<li><a class='comp-item' href='#images'>Images</a></li>
+				<!-- <li><a class='comp-item' href='#tables'>Tables</a></li> -->
+				<li><a class='comp-item' href='#sidebars'>Sidebars</a></li>
+				<li><a class='comp-item' href='#forms'>Forms</a></li>
+				<li><a class='comp-item' href='#footer'>Footer</a></li>
 			</div>
 			<li><a href='#layout'>Layout</a></li>
 			<li><a href='#resources'>Resources</a></li>
@@ -295,7 +295,7 @@
 				<h1>Components</h1>
 			</div>
 
-			<div id='comp-header'>
+			<div id='header'>
 				<h2>Header</h2>
 				<h3>Desktop</h3>
 				<p>The header connects the Art + Art History + Design departments with the greater University of Washington. The gray links go to various external pages, and the logo goes to the University of Washington homepage.</p>
@@ -306,7 +306,7 @@
 				<hr>
 			</div>
 			
-			<div id='comp-navigation'>
+			<div id='navigation'>
 				<h2>Primary navigation</h2>
 				<h3>Desktop</h3>
 				<p>The navigation menu has four top-level items: one for each of the departments and a fourth for shared facilities. Hover over a top-level item to reveal all of the remaining levels in that category at once. The menu supports a maximum of three levels.</p>
@@ -317,19 +317,19 @@
 				<hr>
 			</div>
 			
-			<div id='comp-images'>
+			<div id='images'>
 				<h2>Images within content area</h2>
 				<p class='unspecified'>Unspecified</p>
 				<hr>
 			</div>
 			
-			<div id='comp-tables'>
+			<!-- <div id='tables'>
 				<h2>Tables</h2>
 				<p class='unspecified'>Unspecified</p>
 				<hr>
-			</div>
+			</div> -->
 			
-			<div id='comp-sidebars'>
+			<div id='sidebars'>
 				<h2>Sidebars</h2>
 				<h3>Desktop</h3>
 				<p>The sidebar makes it easy to find information about the current page, or access related pages. The topmost sidebar section contains links to the parent page, the parent page's siblings, and the current page's siblings. The sidebar section below it contains important information that is directly related to the current article.</p>
@@ -340,13 +340,87 @@
 				<hr>
 			</div>
 			
-			<div id='comp-forms'>
-				<h2>Forms (submit and cancel buttons, input fields)</h2>
-				<p class='unspecified'>Unspecified</p>
+			<div id='forms'>
+				<h2>Forms</h2>
+				<div class='all-forms'>
+					<div class='site-input'>
+						<label class='site group-label' for='site-select'>Select</label>
+						<div class='site input-container' id='site-select'>
+							<select class='site'>
+								<option>Test Item 1</option>
+								<option>Longer Test Item 2</option>
+								<option>Even Longer Test Item 3</option>
+							</select>
+						</div>
+					</div>
+
+					<div class='site-input'>
+						<label class='site group-label' for='site-checkboxes'>Checkboxes</label>
+						<div class='site input-container' id='site-checkboxes'>
+							<div class='input-item'>
+								<input class='site' type='checkbox' id='site-checkbox-1'>
+								<label class='site input-label' for='site-checkbox-1'>Checkbox 1</label>
+							</div>
+							
+							<div class='input-item'>
+								<input class='site' type='checkbox' id='site-checkbox-2'>
+								<label class='site input-label' for='site-checkbox-2'>Checkbox 2</label>
+							</div>
+
+							<div class='input-item'>
+								<input class='site' type='checkbox' id='site-checkbox-3'>
+								<label class='site input-label' for='site-checkbox-3'>Checkbox 3</label>
+							</div>
+						</div>
+					</div>
+
+					<div class='site-input'>
+						<label class='site group-label' for='site-radios'>Radios</label>
+						<div class='site input-container' id='site-radios'>
+							<div class='input-item'>
+								<input class='site' type='radio' name='radios' id='site-radio-1'>
+								<label class='site input-label' for='site-radio-1'>Radio 1</label>
+							</div>
+							
+							<div class='input-item'>
+								<input class='site' type='radio' name='radios' id='site-radio-2'>
+								<label class='site input-label' for='site-radio-2'>Radio 2</label>
+							</div>
+							
+							<div class='input-item'>
+								<input class='site' type='radio' name='radios' id='site-radio-3'>
+								<label class='site input-label' for='site-radio-3'>Radio 3</label>
+							</div>
+						</div>
+					</div>
+					
+					<div class='site-input'>
+						<label class='site group-label' for='site-textfield'>Textfield</label>
+						<div class='site input-container' id='site-textfield'>
+							<input class='site' type='text' size='30' placeholder='Placeholder text'>
+						</div>
+					</div>
+
+					<div class='site-input'>
+						<label class='site group-label' for='site-file'>File</label>
+						<div class='site input-container' id='site-file'>
+							<input class='site' type='file'>
+						</div>
+					</div>
+
+					<div class='site-input'>
+						<input class='site alt-submit' type='submit' value='Submit'>
+					</div>
+
+					<div class='site-input'>
+						<input class='site' type='submit' value='Submit'>
+					</div>
+				</div>
+
 				<hr>
 			</div>
 			
-			<div id='comp-footer'>
+			<div id='footer'>
 				<h2>Footer</h2>
 				<h3>Desktop</h3>
 				<p>The footer provides important information across four sections. (1) Contact information including the address, phone number and map to the school. (2) Links to navigate to the most important pages within the site. (3) Social links to stay connected or donate to the school. And (4) Links to legal and administrator pages. The background color is dark gray to blend into the site background.</p>

@@ -10,6 +10,7 @@ $(document).ready(function () {
             $(this).removeClass('active');
         })
         $(this).addClass('active');
+
         if ($(this).hasClass("comp-item")) {
             $('#comp-list').addClass("active");
         }
@@ -37,9 +38,20 @@ function onScroll(event){
             if (currLink.hasClass("comp-item")) {
                 $('#comp-list').addClass("active");
             }
+
+            var hash = currLink.attr('href');
+            changeHashWithoutScrolling(hash);
         }
         else{
             // currLink.removeClass("active");
         }
     });
+}
+
+function changeHashWithoutScrolling(hash) {
+  var id = hash.replace(/^.*#/, ''),
+      elem = document.getElementById(id)
+  elem.id = id+'-tmp'
+  window.location.hash = hash
+  elem.id = id
 }
