@@ -356,6 +356,7 @@ tr {
 }
 
 .download-button-disabled {
+	border-color: $color-lgray;
 	color: #aaa;
 	pointer-events: none;
 }
