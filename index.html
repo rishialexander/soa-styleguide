@@ -39,6 +39,7 @@
 				<!-- <li><a class='comp-item' href='#tables'>Tables</a></li> -->
 				<li><a class='comp-item' href='#sidebars'>Sidebars</a></li>
 				<li><a class='comp-item' href='#forms'>Forms</a></li>
+				<li><a class='comp-item' href='#buttons'>Buttons</a></li>
 				<li><a class='comp-item' href='#footer'>Footer</a></li>
 			</div>
 			<li><a href='#layout'>Layout</a></li>
@@ -322,7 +323,9 @@
 			
 			<div id='images'>
 				<h2>Images within content area</h2>
-				<p class='unspecified'>Unspecified</p>
+				<h3>Desktop</h3>
+				<!-- <p class='unspecified'>Unspecified</p> -->
+				<img src='images/images-desktop.png' />
 				<hr>
 			</div>
 			
@@ -345,84 +348,101 @@
 			
 			<div id='forms'>
 				<h2>Forms</h2>
-				<div class='all-forms'>
-					<div class='site-input'>
-						<label class='site group-label' for='site-select'>Select</label>
-						<div class='site input-container' id='site-select'>
-							<select class='site'>
-								<option>Test Item 1</option>
-								<option>Longer Test Item 2</option>
-								<option>Even Longer Test Item 3</option>
-							</select>
-						</div>
-					</div>
-
-					<div class='site-input'>
-						<label class='site group-label' for='site-checkboxes'>Checkboxes</label>
-						<div class='site input-container' id='site-checkboxes'>
-							<div class='input-item'>
-								<input class='site' type='checkbox' id='site-checkbox-1'>
-								<label class='site input-label' for='site-checkbox-1'>Checkbox 1</label>
-							</div>
-							
-							<div class='input-item'>
-								<input class='site' type='checkbox' id='site-checkbox-2'>
-								<label class='site input-label' for='site-checkbox-2'>Checkbox 2</label>
-							</div>
-
-							<div class='input-item'>
-								<input class='site' type='checkbox' id='site-checkbox-3'>
-								<label class='site input-label' for='site-checkbox-3'>Checkbox 3</label>
+				<!-- <p class='unspecified'>Unspecified</p> -->
+				<div class='all-forms-container'>
+					<div class='all-forms'>
+						<div class='site-input'>
+							<label class='site group-label' for='site-select'>Select</label>
+							<div class='site input-container' id='site-select'>
+								<select class='site'>
+									<option>Test Item 1</option>
+									<option>Longer Test Item 2</option>
+									<option>Even Longer Test Item 3</option>
+								</select>
 							</div>
 						</div>
-					</div>
 
-					<div class='site-input'>
-						<label class='site group-label' for='site-radios'>Radios</label>
-						<div class='site input-container' id='site-radios'>
-							<div class='input-item'>
-								<input class='site' type='radio' name='radios' id='site-radio-1'>
-								<label class='site input-label' for='site-radio-1'>Radio 1</label>
-							</div>
-							
-							<div class='input-item'>
-								<input class='site' type='radio' name='radios' id='site-radio-2'>
-								<label class='site input-label' for='site-radio-2'>Radio 2</label>
-							</div>
-							
-							<div class='input-item'>
-								<input class='site' type='radio' name='radios' id='site-radio-3'>
-								<label class='site input-label' for='site-radio-3'>Radio 3</label>
+						<div class='site-input'>
+							<label class='site group-label' for='site-checkboxes'>Checkboxes</label>
+							<div class='site input-container' id='site-checkboxes'>
+								<div class='input-item'>
+									<input class='site' type='checkbox' id='site-checkbox-1'>
+									<label class='site input-label' for='site-checkbox-1'>Checkbox 1</label>
+								</div>
+								
+								<div class='input-item'>
+									<input class='site' type='checkbox' id='site-checkbox-2'>
+									<label class='site input-label' for='site-checkbox-2'>Checkbox 2</label>
+								</div>
+
+								<div class='input-item'>
+									<input class='site' type='checkbox' id='site-checkbox-3'>
+									<label class='site input-label' for='site-checkbox-3'>Checkbox 3</label>
+								</div>
 							</div>
 						</div>
-					</div>
-					
-					<div class='site-input'>
-						<label class='site group-label' for='site-textfield'>Textfield</label>
-						<div class='site input-container' id='site-textfield'>
-							<input class='site' type='text' size='30' placeholder='Placeholder text'>
+
+						<div class='site-input'>
+							<label class='site group-label' for='site-radios'>Radios</label>
+							<div class='site input-container' id='site-radios'>
+								<div class='input-item'>
+									<input class='site' type='radio' name='radios' id='site-radio-1'>
+									<label class='site input-label' for='site-radio-1'>Radio 1</label>
+								</div>
+								
+								<div class='input-item'>
+									<input class='site' type='radio' name='radios' id='site-radio-2'>
+									<label class='site input-label' for='site-radio-2'>Radio 2</label>
+								</div>
+								
+								<div class='input-item'>
+									<input class='site' type='radio' name='radios' id='site-radio-3'>
+									<label class='site input-label' for='site-radio-3'>Radio 3</label>
+								</div>
+							</div>
 						</div>
-					</div>
-
-					<div class='site-input'>
-						<label class='site group-label' for='site-file'>File</label>
-						<div class='site input-container' id='site-file'>
-							<input class='site' type='file'>
+						
+						<div class='site-input'>
+							<label class='site group-label' for='site-textfield'>Textfield</label>
+							<div class='site input-container' id='site-textfield'>
+								<input class='site' type='text' size='30' placeholder='Placeholder text'>
+							</div>
 						</div>
-					</div>
 
-					<div class='site-input'>
-						<input class='site alt-submit' type='submit' value='Submit'>
-					</div>
+						<div class='site-input'>
+							<label class='site group-label' for='site-file'>File</label>
+							<div class='site input-container' id='site-file'>
+								<input class='site' type='file'>
+							</div>
+						</div>
 
-					<div class='site-input'>
-						<input class='site' type='submit' value='Submit'>
+						<div class='site-input'>
+							<input class='site alt-submit' type='submit' value='Submit'>
+						</div>
+
+						<div class='site-input'>
+							<input class='site' type='submit' value='Submit'>
+						</div>
 					</div>
 				</div>
 
 				<hr>
 			</div>
 			
+			<div id='buttons'>
+				<h2>Buttons</h2>
+				<!-- <p class='unspecified'>Unspecified</p> -->
+				<div class='site-button-container'>
+					<div class='button-dark-bg'>
+						<a href='#buttons'><div class='site-button site-button-light'>Support the School</div></a>
+					</div>
+					<div class='button-light-bg'>
+						<a href='#buttons'><div class='site-button site-button-dark'>Button on White</div></a>
+					</div>
+				</div>
+				<hr>
+			</div>
+
 			<div id='footer'>
 				<h2>Footer</h2>
 				<h3>Desktop</h3>
@@ -467,8 +487,19 @@
 		<article id='resources'>
 			<h1 id='resources'>Resources</h1>
 			<h2>Assets</h2>
-			<p>This download pack (coming soon) contains all of the logos, icons and typefaces used within the site.</p>
-			<p><a class='button button-disabled'>Download all assets (coming soon)</a></p>
+			<p>This download pack contains all of the logos and fonts used within the School of Art + Art History + Design website. Icons are coming soon.</p>
+			<p><a href='downloads/assets.zip' class='download-button'>Download All Assets (1.7 MB)</a></p>
+			<h3>Logos</h3>
+			<p><img class='download-preview-img' src='images/soa-logo.png'></p>
+			<p>The School of Art + Art History + Design logo is used at the top of every page. The download includes both raster and vector images.</p>
+			<p><a href='downloads/logos.zip' class='download-button'>Download Logos (1.6 MB)</a></p>
+			<h3>Fonts</h3>
+			<p><img class='download-preview-img' src='images/karla-preview.png'></p>
+			<p>The School of Art + Art History + Design website is set entirely in Karla.</p>
+			<p><a href='downloads/fonts.zip' class='download-button'>Download Fonts (48 KB)</a></p>
+			<h3>Icons</h3>
+			<p>Coming soon. Includes social, PDF, and print icons.</p>
+			<p><a href='downloads/icons.zip' class='download-button download-button-disabled'>Download Icons (soon)</a></p>
 			<h2>Interactive prototypes</h2>
 			<p>The prototypes below are designed to demonstrate the interactive and responsive aspects of the website. They are also helpful for understanding how all of the parts fit together.</p>
 			<p><a href='http://rishialexander.com/soa/home.html'>Home page prototype</a></p>
