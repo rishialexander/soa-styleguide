@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>SoA Styleguide</title>
-	<link href="style.css" rel="stylesheet">	
+	<link href="style.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<section class='header'>
@@ -52,6 +53,12 @@
 			<p>This is the style guide for the forthcoming School of Art + Art History + Design website. It provides tools, assets and guidance to streamline the workflow between designers and developers, and maintain a consistency in style across the entire site.</p>
 			<p>The style guide was last updated on January 1, 2016. For more information, contact Rishi Agarwal (<a href='mailto:rishialexander@gmail.com'>rishialexander@gmail.com</a>).</p>
 
+			<h2>Interactive prototypes</h2>
+			<p>The prototypes below are designed to demonstrate the interactive and responsive aspects of the website. They are also helpful for understanding how all of the parts fit together.</p>
+			<p><a href='http://rishialexander.com/soa/home.html'>Home page prototype</a></p>
+			<p><a href='http://rishialexander.com/soa/inner-1.html'>Article page prototype</a></p>
+			<p>For additional reference, see the <a href='https://github.com/rishialexander/soa/tree/gh-pages'>source code for the prototypes</a>.</p>
+
 			<div class='screengrabs'>
 				<img class='screengrab' src='images/screengrab-1.png'>
 				<img class='screengrab' src='images/screengrab-2.png'>
@@ -71,127 +78,132 @@
 				<tr>
 					<td>Purple</td>
 					<td><div class='color-sample color-purple'></div></td>
-					<td>#4b2d83</td>
+					<td class='code'>#4b2d83</td>
 					<td><p class='table-description'>Links</p></td>
 				</tr>
 				<tr>
 					<td>Pink</td>
 					<td><div class='color-sample color-pink'></div></td>
-					<td>#a93c96</td>
+					<td class='code'>#a93c96</td>
 					<td><p class='table-description'>Link rollover</p></td>
 				</tr>
 				<tr>
-					<td>Beige</td>
+					<td>Gold</td>
 					<td><div class='color-sample color-beige'></div></td>
-					<td>#a09986</td>
-					<td><p class='table-description'>Links on black backgrounds on Division home pages</p></td>
+					<td class='code'>#b7a57a</td>
+					<td><p class='table-description'>Links on black backgrounds</p></td>
 				</tr>
 				<tr>
 					<td>White</td>
 					<td><div class='color-sample color-white'></div></td>
-					<td>#ffffff</td>
+					<td class='code'>#ffffff</td>
 					<td><p class='table-description'>Text area backgrounds and body text for black backgrounds</p></td>
 				</tr>
 				<tr>
 					<td>Light Gray</td>
 					<td><div class='color-sample color-lgray'></div></td>
-					<td>#cccccc</td>
-					<td><p class='table-description'>Link underline, footer text, and links on black backgrounds</p></td>
+					<td class='code'>#cccccc</td>
+					<td><p class='table-description'>Link underline, and footer text</p></td>
 				</tr>
 				<tr>
 					<td>Medium Gray</td>
 					<td><div class='color-sample color-mgray'></div></td>
-					<td>#999999</td>
-					<td><p class='table-description'>Text in tag area</p></td>
+					<td class='code'>#666666</td>
+					<td><p class='table-description'>Text in tag area, quick link text and icons in header</p></td>
 				</tr>
 				<tr>
 					<td>Dark Gray</td>
 					<td><div class='color-sample color-dgray'></div></td>
-					<td>#333333</td>
+					<td class='code'>#333333</td>
 					<td><p class='table-description'>Page background, footer background</p></td>
 				</tr>
 				<tr>
 					<td>Black</td>
 					<td><div class='color-sample color-black'></div></td>
-					<td>#000000</td>
+					<td class='code'>#000000</td>
 					<td><p class='table-description'>Body text and sidebar backgrounds</p></td>
 				</tr>
 			</table>
 		</article>
 		<article id='typography'>
 			<h1>Typography</h1>
-			<p>The Art + Art History + Design website is set entirely in Karla. To maximize readability, aim for 8-12 words per line when possible.</p>
+			<p>The Art + Art History + Design website is set entirely in Karla. To maximize readability, the design uses widths and font sizes that aim for 8-12 words per line when possible.</p>
 			<h2>Semantic hierarchy</h2>
 			<table>
 				<tr>
 					<th><div class='type-element'>Element</div></th>
 					<th><div class='type-specs'>Specs</div></th>
-					<th><div class='type-description'>Comments</div></th>
 				</tr>
 				<tr>
 					<td><h1 class='site'>Page Title</h1></td>
 					<td>
-						<ul class='no-dots'>
-							<li>35px bold black</li>
-							<li>35px line-height</li>
-							<li>0.1px letter-spacing</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>2.2rem bold black</li>
+								<li>1 line-height</li>
+								<li>0.1px letter-spacing</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'>The page title is an H1 element. It should only be used once per page.</p></td>
 				</tr>
 				<tr>
 					<td><h2 class='site'>Second Level Heading</h2></td>
 					<td>
-						<ul class='no-dots'>
-							<li>24px bold black</li>
-							<li>35px line-height</li>
-							<li>-0.5px letter-spacing</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>1.5rem bold black</li>
+								<li>1.45 line-height</li>
+								<li>-0.5px letter-spacing</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'>Used after a page title in the document hierarchy.</p></td>
 				</tr>
 				<tr>
 					<td><h3 class='site'>Third Level Heading</h3></td>
 					<td>
-						<ul class='no-dots'>
-							<li>20px normal black</li>
-							<li>35px line-height</li>
-							<li>-0.2px letter spacing</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>1.25rem normal black</li>
+								<li>1.75 line-height</li>
+								<li>-0.2px letter spacing</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'>Used after an H2 element in the document hierarchy.</p></td>
 				</tr>
 				<tr>
 					<td><h4 class='site'>FOURTH LEVEL HEADING</h4></td>
 					<td>
-						<ul class='no-dots'>
-							<li>15px bold black</li>
-							<li>35px line-height</li>
-							<li>1px letter spacing</li>
-							<li>uppercase</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>0.94rem bold black</li>
+								<li>2.33 line-height</li>
+								<li>1px letter spacing</li>
+								<li>uppercase</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'>Used after an H3 element in the document hierarchy.</p></td>
 				</tr>
 				<tr>
 					<td><h5 class='site'>Fifth Level Heading</h5></td>
 					<td>
-						<ul class='no-dots'>
-							<li>15px bold black</li>
-							<li>35px line-height</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>0.94rem bold black</li>
+								<li>2.33 line-height</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'>Used after an H4 element in the document hierarchy.</p></td>
 				</tr>
 				<tr>
 					<td><h6 class='site'>Sixth Level Heading</h6></td>
 					<td>
-						<ul class='no-dots'>
-							<li>15px italic bold black</li>
-							<li>35px line-height</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>0.94rem italic bold black</li>
+								<li>2.33 line-height</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'>Used after an H4 element in the document hierarchy.</p></td>
 				</tr>
 				<tr>
 					<td>
@@ -200,12 +212,13 @@
 						</p>
 					</td>
 					<td>
-						<ul class='no-dots'>
-							<li>16px black</li>
-							<li>24px line-height</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>1rem black</li>
+								<li>1.5 line-height</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'></p></td>
 				</tr>
 			</table>
 			<h2>General text formatting</h2>
@@ -213,51 +226,54 @@
 				<tr>
 					<th><div class='type-element'>Element</div></th>
 					<th><div class='type-specs'>Specs</div></th>
-					<th><div class='type-description'>Comments</div></th>
 				</tr>
 				<tr>
 					<td><a id='link-test' class='site' href='#link-test'>This is a link</a></td>
-					<td>	
-						<ul class='no-dots'>
-							<li>16px purple</li>
-							<li>1px light gray underline</li>
-							<li>pink on hover</li>
-						</ul>
+					<td>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>1rem purple</li>
+								<li>1px light gray underline</li>
+								<li>pink on hover</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'></p></td>
 				</tr>
 				<tr>
 					<td><div class='tag-text site'>Text in tag area</div></td>
 					<td>
-						<ul class='no-dots'>
-							<li>12px medium gray</li>
-							<li>18px line-height</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>0.75rem medium gray</li>
+								<li>1.5 line-height</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'></p></td>
 				</tr>
 				<tr>
 					<td><a><a id='tag-link-test' class='tag-link site' href='#tag-link-test'>Link in tag area</a></td>
 					<td>
-						<ul class='no-dots'>
-							<li>12px purple</li>
-							<li>1px light gray underline</li>
-							<li>pink on hover</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>0.75rem purple</li>
+								<li>1px light gray underline</li>
+								<li>pink on hover</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'></p></td>
 				</tr>
 				<tr>
 					<td><blockquote class='site'>This is a sample pull quote.</blockquote></td>
 					<td>
-						<ul class='no-dots'>
-							<li>24px centered black</li>
-							<li>29px line-height</li>
-							<li>-0.5px letter spacing</li>
-							<li>28px 0px padding</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>1.5rem centered black</li>
+								<li>1.21 line-height</li>
+								<li>-0.5px letter spacing</li>
+								<li>28px 0px padding</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'></p></td>
 				</tr>
 				<tr>
 					<td>
@@ -268,13 +284,14 @@
 						</ul>
 					</td>
 					<td>
-						<ul class='no-dots'>
-							<li>24px black</li>
-							<li>28px line-height</li>
-							<li>light gray dot</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>1rem black</li>
+								<li>1.75 line-height</li>
+								<li>light gray dot</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'></p></td>
 				</tr>
 				<tr>
 					<td>
@@ -285,12 +302,26 @@
 						</ol>
 					</td>
 					<td>
-						<ul class='no-dots'>
-							<li>24px black</li>
-							<li>28px line-height</li>
-						</ul>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>1rem black</li>
+								<li>1.75 line-height</li>
+							</ul>
+						</div>
 					</td>
-					<td><p class='table-description'></p></td>
+				</tr>
+				<tr>
+					<td>
+						<div class='site-breadcrumb'>BREADCRUMB</div> : <div class='site-breadcrumb'>ANOTHER LINK</div>
+					</td>
+					<td>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>0.75rem bold purple</li>
+								<li>0.5px letter spacing</li>
+							</ul>
+						</div>
+					</td>
 				</tr>
 			</table>
 		</article>
@@ -303,24 +334,154 @@
 				<h2>Header</h2>
 				<h3>Desktop</h3>
 				<p>The header connects the Art + Art History + Design departments with the greater University of Washington. The gray links go to various external pages, and the logo goes to the University of Washington homepage.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>800px width and greater</li></ul>
+					<div class='code code-title'>Header</div>
+					<ul class='no-dots code'>
+						<li>height: 60px;</li>
+						<li>width: 100%;</li>
+						<li>background: #ffffff;</li>
+					</ul>
+					<div class='code code-title'>W logo</div>
+					<ul class='no-dots code'>
+						<li>height: 75%;</li>
+						<li>left: 75px;</li>
+						<li>bottom: 0px;</li>
+					</ul>
+					<div class='code code-title'>Quick links</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.81rem;</li>
+						<li>color: #666666; (medium gray)</li>
+						<li>right: 38px;</li>
+					</ul>
+				</div>
 				<img src='images/header-desktop.png' />
+				<h3>Tablet</h3>
+				<p>On tablet devices the gray shortcut links are removed and replaced with a hamburger button &#9776; that opens the navigation dropdown menu.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>600px up to 800px width</li></ul>
+					<div class='code code-title'>Header</div>
+					<ul class='no-dots code'>
+						<li>height: 50px;</li>
+					</ul>
+					<div class='code code-title'>W logo</div>
+					<ul class='no-dots code'>
+						<li>left: 30px;</li>
+					</ul>
+					<div class='code code-title'>Hamburger button</div>
+					<ul class='no-dots code'>
+						<li>height: 50px;</li>
+						<li>width: 50px;</li>
+					</ul>
+				</div>
+				<img src='images/header-tablet.png' />
 				<h3>Mobile</h3>
-				<p>On mobile devices the gray shortcut links are removed and replaced with a hamburger button &#9776; that opens the navigation dropdown menu.</p>
+				<p>The only difference between tablets and phones is that the margins are smaller on phones.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>Less than 600px width</li></ul>
+					<div class='code code-title'>Header</div>
+					<ul class='no-dots code'>
+						<li>height: 50px;</li>
+					</ul>
+					<div class='code code-title'>W logo</div>
+					<ul class='no-dots code'>
+						<li>left: 5px;</li>
+					</ul>
+				</div>
 				<img src='images/header-mobile.png' />
 				<hr>
 			</div>
-			
+
 			<div id='navigation'>
 				<h2>Primary navigation</h2>
 				<h3>Desktop</h3>
-				<p>The navigation menu has four top-level items: one for each of the departments and a fourth for shared facilities. Hover over a top-level item to reveal all of the remaining levels in that category at once. The menu supports a maximum of three levels.</p>
+				<p>The navigation menu has four top-level items: one for each of the departments and a fourth for shared facilities. Hover over or tap a top-level item to reveal all of the remaining levels in that category at once. The menu supports a maximum of three levels.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>800px width and greater</li></ul>
+					<div class='code code-title'>Menu</div>
+					<ul class='no-dots code'>
+						<li>top: 90px;</li>
+						<li>right: 36px;</li>
+					</ul>
+					<div class='code code-title'>Top level text</div>
+					<ul class='no-dots code'>
+						<li>font-size: 1rem;</li>
+						<li>margin-right: 25px;</li>
+						<li>padding: 8px 12px;</li>
+					</ul>
+					<div class='code code-title'>Dropdown box</div>
+					<ul class='no-dots code'>
+						<li>padding: 8px 20px 8px 10px;</li>
+					</ul>
+					<div class='code code-title'>Second level text</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.88rem;</li>
+						<li>font-weight: bold;</li>
+						<li>padding: 5px 10px;</li>
+					</ul>
+					<div class='code code-title'>Third level section</div>
+					<ul class='no-dots code'>
+						<li>padding: 0 0 5px 20px;</li>
+					</ul>
+					<div class='code code-title'>Third level text</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.88rem;</li>
+						<li>padding: 5px 10px;</li>
+					</ul>
+				</div>
 				<img src='images/nav-desktop.png' />
+				<h3>Tablet</h3>
+				<p>On tablet, press the hamburger button &#9776; in the header to reveal the navigation menu with a sliding animation. When the menu opens, only the top-level items are visible. Tap any top-level item to reveal all of the remaining levels in that category, in a similar fashion to the desktop experience. Plus symbols +, minus symbols &ndash;, and horizontal rules help to indicate when a menu is expanded. The hamburger button turns into an &#xd7; to dismiss the menu.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>600px up to 800px width</li></ul>
+					<div class='code code-title'>Menu</div>
+					<ul class='no-dots code'>
+						<li>right: 0px;</li>
+						<li>width: 300px;</li>
+					</ul>
+					<div class='code code-title'>Top level text</div>
+					<ul class='no-dots code'>
+					<ul class='no-dots code'>
+						<li>font-size: 1rem;</li>
+						<li>font-weight: bold;</li>
+						<li>color: #4b2d83; (purple)</li>
+						<li>background: #f1f1f1;</li>
+						<li>padding: 12px 10px;</li>
+						<li>border-top: 1px solid #ffffff; (white)</li>
+					</ul>
+					</ul>
+					<div class='code code-title'>Second level text</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.94rem;</li>
+						<li>font-weight: bold;</li>
+						<li>padding: 12px 10px;</li>
+						<li>border-bottom: 1px solid #f1f1f1;</li>
+					</ul>
+					<div class='code code-title'>Third level section</div>
+					<ul class='no-dots code'>
+						<li>padding: 0 0 8px 24px;</li>
+					</ul>
+					<div class='code code-title'>Third level text</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.94rem;</li>
+						<li>paddding: 10px;</li>
+					</ul>
+				</div>
+				<img src='images/nav-tablet.png' />
 				<h3>Mobile</h3>
-				<p>On mobile, press the hamburger button &#9776; in the header to reveal the navigation menu with a sliding animation. When the menu opens, only the top-level items are visible. Tap any top-level item to reveal all of the remaining levels in that category, in a similar fashion to the desktop experience. Plus symbols +, minus symbols &ndash;, and horizontal rules help to indicate when a menu is expanded. The hamburger button turns into an &#xd7; to dismiss the menu.</p>
+				<p>On mobile, the navigation menu works exactly as on tablet. The only difference is that the menu spans entire width of the screen.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>Less than 600px width</li></ul>
+					<div class='code code-title'>Menu</div>
+					<ul class='no-dots code'>
+						<li>width: 100%;</li>
+					</ul>
+					<div class='code code-title'>Everything else is identical to "Tablet"</div>
+				</div>
 				<img src='images/nav-mobile.png' />
 				<hr>
 			</div>
-			
+
 			<div id='images'>
 				<h2>Images within content area</h2>
 				<h3>Desktop</h3>
@@ -328,27 +489,143 @@
 				<img src='images/images-desktop.png' />
 				<hr>
 			</div>
-			
+
 			<!-- <div id='tables'>
 				<h2>Tables</h2>
 				<p class='unspecified'>Unspecified</p>
 				<hr>
 			</div> -->
-			
+
 			<div id='sidebars'>
 				<h2>Sidebars</h2>
 				<h3>Desktop</h3>
 				<p>The sidebar makes it easy to find information about the current page, or access related pages. The topmost sidebar section contains links to the parent page, the parent page's siblings, and the current page's siblings. The sidebar section below it contains important information that is directly related to the current article.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>1000px width and greater</li></ul>
+					<div class='code code-title'>Sidebars</div>
+					<ul class='no-dots code'>
+						<li>width: 370px;</li>
+						<li>padding: 24px 40px;</li>
+						<li>margin-left: 8px;</li>
+					</ul>
+					<div class='code code-title'>Navigation section</div>
+					<ul class='no-dots code'>
+						<li>background: rgba(255, 255, 255, 0.9); (90% white)</li>
+						<li>border-top: 15px solid black;</li>
+					</ul>
+					<div class='code code-title'>Navigation unordered lists</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.875rem;</li>
+						<li>line-height: 1.5;</li>
+						<li>margin-bottom: 12px;</li>
+					</ul>
+					<div class='code code-title'>Information section</div>
+					<ul class='no-dots code'>
+						<li>color: #ffffff; (white)</li>
+					</ul>
+				</div>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>800px up to 1000px width</li></ul>
+					<div class='code code-title'>Sidebars</div>
+					<ul class='no-dots code'>
+						<li>width: 250px;</li>
+						<li>padding: 24px 30px;</li>
+					</ul>
+				</div>
 				<img src='images/sidebar-desktop.png' />
+				<h3>Tablet</h3>
+				<p>On tablet the column is narrower to fit on the screen. The line height of the links is increased to accommodate finger taps.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>600px up to 800px width</li></ul>
+					<div class='code code-title'>Sidebars</div>
+					<ul class='no-dots code'>
+						<li>width: 200px;</li>
+						<li>padding: 24px 20px;</li>
+					</ul>
+					<div class='code code-title'>Navigation unordered lists</div>
+					<ul class='no-dots code'>
+						<li>line-height: 2;</li>
+					</ul>
+				</div>
+				<img src='images/sidebar-tablet.png' />
 				<h3>Mobile</h3>
-				<p>On mobile the entire page collapses to a single column. The sidebar appears directly below the main article. The line height for the links is increased to accommodate finger taps.</p>
+				<p>On mobile the entire page collapses to a single column. The sidebar appears directly below the main article. The line height of the links is increased to accommodate finger taps.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>Less than 600px width</li></ul>
+					<div class='code code-title'>Sidebars</div>
+					<ul class='no-dots code'>
+						<li>width: 100%;</li>
+						<li>padding: 24px 10px;</li>
+					</ul>
+					<div class='code code-title'>Navigation section</div>
+					<ul class='no-dots code'>
+						<li>background: rgba(255, 255, 255, 1); (white)</li>
+						<li>border-top: none;</li>
+					</ul>					
+				</div>
 				<img src='images/sidebar-mobile.png' />
 				<hr>
 			</div>
-			
+
 			<div id='forms'>
 				<h2>Forms</h2>
 				<!-- <p class='unspecified'>Unspecified</p> -->
+				<div class='code-box'>
+					<div class='code code-title'>Form elements</div>
+					<ul class='no-dots code'>
+						<li>margin-bottom: 30px;</li>
+						<li>font-size: 0.94rem;</li>
+					</ul>
+					<div class='code code-title'>Form labels</div>
+					<ul class='no-dots code'>
+						<li>font-weight: bold;</li>
+						<li>color: #000000; (black)</li>
+						<li>letter-spacing: 0.7px;</li>
+						<li>text-transform: uppercase;</li>
+						<li>margin-bottom: 5px;</li>
+					</ul>
+					<div class='code code-title'>Select</div>
+					<ul class='no-dots code'>
+						<li>height: 25px;</li>
+						<li>background: #ffffff; (white)</li>
+						<li>border: 1px solid #cccccc; (light gray)</li>
+						<li>border-radius: 5px;</li>
+						<li>padding: 0 6px;</li>
+					</ul>
+					<div class='code code-title'>Checkboxes and radios</div>
+					<ul class='no-dots code'>
+						<li>margin-bottom: 5px;</li>
+					</ul>
+					<div class='code code-title'>Textfield</div>
+					<ul class='no-dots code'>
+						<li>height: 25px;</li>
+						<li>border: 1px solid #cccccc; (light gray)</li>
+						<li>padding: 0 6px;</li>
+					</ul>	
+					<div class='code code-title'>File</div>
+					<ul class='no-dots code'>
+						<li>nothing</li>
+					</ul>
+					<div class='code code-title'>Submit</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.88rem;</li>
+						<li>font-weight: bold;</li>
+						<li>color: #585858;</li>
+						<li>letter-spacing: 0.7px;</li>
+						<li>text-transform: uppercase;</li>
+						<li>background: #ffffff; (white)</li>
+						<li>border: 1px solid #585858;</li>
+						<li>height: 32px;</li>
+						<li>padding: 0 10px;</li>
+					</ul>
+					<div class='code code-title'>Submit (active, hover, focus)</div>
+					<ul class='no-dots code'>
+						<li>color: #ffffff; (white)</li>
+						<li>background: #a93c96; (pink)</li>
+						<li>border-color: #a93c96; (pink)</li>
+					</ul>
+					</div>	
+				</div>
 				<div class='all-forms-container'>
 					<div class='all-forms'>
 						<div class='site-input'>
@@ -369,7 +646,7 @@
 									<input class='site' type='checkbox' id='site-checkbox-1'>
 									<label class='site input-label' for='site-checkbox-1'>Checkbox 1</label>
 								</div>
-								
+
 								<div class='input-item'>
 									<input class='site' type='checkbox' id='site-checkbox-2'>
 									<label class='site input-label' for='site-checkbox-2'>Checkbox 2</label>
@@ -389,19 +666,19 @@
 									<input class='site' type='radio' name='radios' id='site-radio-1'>
 									<label class='site input-label' for='site-radio-1'>Radio 1</label>
 								</div>
-								
+
 								<div class='input-item'>
 									<input class='site' type='radio' name='radios' id='site-radio-2'>
 									<label class='site input-label' for='site-radio-2'>Radio 2</label>
 								</div>
-								
+
 								<div class='input-item'>
 									<input class='site' type='radio' name='radios' id='site-radio-3'>
 									<label class='site input-label' for='site-radio-3'>Radio 3</label>
 								</div>
 							</div>
 						</div>
-						
+
 						<div class='site-input'>
 							<label class='site group-label' for='site-textfield'>Textfield</label>
 							<div class='site input-container' id='site-textfield'>
@@ -426,12 +703,56 @@
 					</div>
 				</div>
 
+				<h3>Tabs</h3>
+				<div class='code-box'>
+					<div class='code code-title'>Tabs</div>
+					<ul class='no-dots code'>
+						<li>border: 1px solid #cccccc; (light gray)</li>
+					</ul>
+					<div class='code code-title'>Tab text</div>
+					<ul class='no-dots code'>
+						<li>color: #000000; (black)</li>
+						<li>font-size: 0.88rem;</li>
+						<li>font-weight: bold;</li>
+						<li>letter-spacing: 1px;</li>
+						<li>padding: 12px 16px;</li>
+					</ul>					
+				</div>
+				<img src='images/tabs-desktop.png' />
+
 				<hr>
 			</div>
-			
+
 			<div id='buttons'>
 				<h2>Buttons</h2>
 				<!-- <p class='unspecified'>Unspecified</p> -->
+				<div class='code-box'>
+					<div class='code code-title'>Buttons</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.88rem</li>
+						<li>font-weight: bold</li>
+						<li>letter-spacing: 0.7px</li>
+						<li>text-transform: uppercase</li>
+						<li>height: 32px;</li>
+						<li>padding: 8px 12px 24px;</li>
+					</ul>
+					<div class='code code-title'>Buttons (active, hover, focus)</div>
+					<ul class='no-dots code'>
+						<li>color: #ffffff; (white)</li>
+						<li>background: #a93c96; (pink)</li>
+						<li>border-color: #a93c96; (pink)</li>
+					</ul>
+					<div class='code code-title'>Light button</div>
+					<ul class='no-dots code'>
+						<li>color: #ffffff; (white)</li>
+						<li>border: 1px solid #cccccc; (light gray)</li>
+					</ul>
+					<div class='code code-title'>Dark button</div>
+					<ul class='no-dots code'>
+						<li>color: #585858;</li>
+						<li>border: 1px solid #585858;</li>
+					</ul>					
+				</div>
 				<div class='site-button-container'>
 					<div class='button-dark-bg'>
 						<a href='#buttons'><div class='site-button site-button-light'>Support the School</div></a>
@@ -447,9 +768,97 @@
 				<h2>Footer</h2>
 				<h3>Desktop</h3>
 				<p>The footer provides important information across four sections. (1) Contact information including the address, phone number and map to the school. (2) Links to navigate to the most important pages within the site. (3) Social links to stay connected or donate to the school. And (4) Links to legal and administrator pages. The background color is dark gray to blend into the site background.</p>
+				<p>The social icons change to pink on hover.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>800px width and greater</li></ul>
+					<div class='code code-title'>Footer</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.78rem;</li>
+						<li>line-height: 1.13rem;</li>
+						<li>color: #cccccc; (light gray)</li>
+						<li>padding: 40px 85px;</li>
+					</ul>
+					<div class='code code-title'>Footer sections</div>
+					<ul class='no-dots code'>
+						<li>padding: 20px 20px 100px 0;</li>
+					</ul>
+					<div class='code code-title'>Footer section 1: contact</div>
+					<ul class='no-dots code'>
+						<li>width: 30%;</li>
+					</ul>
+					<div class='code code-title'>Footer section 2: navigation</div>
+					<ul class='no-dots code'>
+						<li>width: 20%;</li>
+					</ul>
+					<div class='code code-title'>Footer section 3: social</div>
+					<ul class='no-dots code'>
+						<li>width: 25%;</li>
+					</ul>
+					<div class='code code-title'>Footer section 4: administration</div>
+					<ul class='no-dots code'>
+						<li>width: 20%;</li>
+					</ul>					
+				</div>
 				<img src='images/footer-desktop.png' />
+				<h3>Tablet</h3>
+				<p>On tablet, the footer is collapsed into two columns. All of the content remains the same.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>600px up tp 800px width</li></ul>
+					<div class='code code-title'>Footer</div>
+					<ul class='no-dots code'>
+						<li>padding: 40px;</li>
+					</ul>
+					<div class='code code-title'>Footer sections</div>
+					<ul class='no-dots code'>
+						<li>padding: 20px 20px 40px 0;</li>
+					</ul>
+					<div class='code code-title'>Footer section 1: contact</div>
+					<ul class='no-dots code'>
+						<li>width: 50%;</li>
+					</ul>
+					<div class='code code-title'>Footer section 2: navigation</div>
+					<ul class='no-dots code'>
+						<li>width: 50%;</li>
+					</ul>
+					<div class='code code-title'>Footer section 3: social</div>
+					<ul class='no-dots code'>
+						<li>width: 50%;</li>
+					</ul>
+					<div class='code code-title'>Footer section 4: administration</div>
+					<ul class='no-dots code'>
+						<li>width: 50%;</li>
+					</ul>				
+				</div>
+				<img src='images/footer-tablet.png' />
 				<h3>Mobile</h3>
 				<p>On mobile, the footer is collapsed into a single column. All of the content remains the same.</p>
+				<div class='code-box'>
+					<ul class='no-dots code'><li>Less than 600px width</li></ul>
+					<div class='code code-title'>Footer</div>
+					<ul class='no-dots code'>
+						<li>padding: 40px 10px;</li>
+					</ul>
+					<div class='code code-title'>Footer sections</div>
+					<ul class='no-dots code'>
+						<li>padding: 20px 20px 40px 0;</li>
+					</ul>
+					<div class='code code-title'>Footer section 1: contact</div>
+					<ul class='no-dots code'>
+						<li>width: 100%;</li>
+					</ul>
+					<div class='code code-title'>Footer section 2: navigation</div>
+					<ul class='no-dots code'>
+						<li>width: 100%;</li>
+					</ul>
+					<div class='code code-title'>Footer section 3: social</div>
+					<ul class='no-dots code'>
+						<li>width: 100%;</li>
+					</ul>
+					<div class='code code-title'>Footer section 4: administration</div>
+					<ul class='no-dots code'>
+						<li>width: 100%;</li>
+					</ul>			
+				</div>
 				<img src='images/footer-mobile.png' />
 			</div>
 		</article>
@@ -461,6 +870,7 @@
 					<ul class='second-level-list'>
 						<li>3–5 images will be curated especially for the homepage. One of them will be selected at random when refreshing the page.</li>
 						<li>On all other pages, the background images will not change.</li>
+						<li>Some pages may have multiple pictures in the background. Before adding them to the site, they must be composited into a single image.</li>
 					</ul>
 				</li>
 				<li>All of the content is aligned to the same left margin regardless of screen size. This includes the header, the logo, the article, and the footer.</li>
@@ -470,7 +880,11 @@
 			<ul>
 				<li>The article has a maximum width to prevent the line lengths from becoming too long.</li>
 				<li>The sidebar has a smaller maximum width. It's aligned to the top edge of the article and sticks to the right edge of the article.</li>
+				<li>When the browser window is expanded to large sizes, the page content becomes centered. See the interactive prototype to observe the intended behavior.</li>
 			</ul>
+			<div class='code-box'>
+				<ul class='no-dots code'><li>800px width or greater</li></ul>
+			</div>
 			<img src='images/layout-desktop.png' />
 			<h3>Tablet</h3>
 			<p>On tablet, the content is almost identical but there are significant visual changes to accommodate the smaller screen size.</p>
@@ -480,6 +894,9 @@
 				<li>The logo is smaller than on desktop.</li>
 				<li>The footer is collapsed into two columns.</li>
 			</ul>
+			<div class='code-box'>
+				<ul class='no-dots code'><li>600px up to 800px width</li></ul>
+			</div>
 			<img src='images/layout-tablet.png' />
 			<h3>Mobile</h3>
 			<p>On mobile, there are additional visual changes to accommodate the smallest screen sizes.</p>
@@ -490,13 +907,16 @@
 				<li>The background image is shrinks with the width of the page, but it has a minimum size so that it crops instead of filling the page.</li>
 				<li>The sidebar is positioned below the article.</li>
 			</ul>
+			<div class='code-box'>
+				<ul class='no-dots code'><li>Less than 600px width</li></ul>
+			</div>
 			<img src='images/layout-mobile.png' />
 		</article>
 		<article id='resources'>
 			<h1 id='resources'>Resources</h1>
 			<h2>Assets</h2>
 			<p>This download pack contains all of the logos, fonts, and icons used within the School of Art + Art History + Design website.</p>
-			<p><a href='downloads/assets.zip' class='download-button'>Download All Assets (2.3 MB)</a></p>
+			<p><a href='downloads/assets.zip' class='download-button'>Download All Assets (2.4 MB)</a></p>
 			<h3>Logos</h3>
 			<p><img class='download-preview-img' src='images/soa-logo.png'></p>
 			<p>The School of Art + Art History + Design logo is used at the top of every page. The download includes both raster and vector formats.</p>
@@ -508,12 +928,7 @@
 			<h3>Icons</h3>
 			<p><img class='download-preview-img' src='images/icons-preview.png'></p>
 			<p>The download pack includes social, PDF, and print icons in both raster and vector formats.</p>
-			<p><a href='downloads/icons.zip' class='download-button'>Download Icons (675 KB)</a></p>
-			<h2>Interactive prototypes</h2>
-			<p>The prototypes below are designed to demonstrate the interactive and responsive aspects of the website. They are also helpful for understanding how all of the parts fit together.</p>
-			<p><a href='http://rishialexander.com/soa/home.html'>Home page prototype</a></p>
-			<p><a href='http://rishialexander.com/soa/inner-1.html'>Article page prototype</a></p>
-			<p>For additional reference, see the <a href='https://github.com/rishialexander/soa/tree/gh-pages'>source code for the prototypes</a>.</p>
+			<p><a href='downloads/icons.zip' class='download-button'>Download Icons (695 KB)</a></p>
 		</article>
 	</section>
 

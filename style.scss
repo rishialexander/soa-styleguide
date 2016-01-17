@@ -26,7 +26,7 @@
 	font-style: italic;
 }
 
-.clearfix { 
+.clearfix {
 	content: "";
 	display: table;
 	clear: both;
@@ -41,18 +41,42 @@ html {
 }
 
 body {
-	margin: 0; 
+	margin: 0;
 	font-family: 'Karla', 'Helvetica', sans-serif;
 	color: #000;
 	font-size: 16px;
 }
 
-$color-purple: #4b2d83;
-$color-pink: 	#a93c96;
+.code {
+	font-family: 'Roboto Mono';
+	font-size: 13px;
+	color: #444;
+}
+
+.code-box {
+	padding: 16px 22px;
+	background: #f3f3f3;
+	box-sizing: border-box;
+	max-width: 520px;
+	margin: 30px 0 10px;
+	border-radius: 2px;
+}
+
+.code-title {
+	font-weight: bold;
+	margin-bottom: 2px;
+
+	&:not(:first-child) {
+		margin: 16px 0 2px;
+	}
+}
+
+$color-purple:	#4b2d83;
+$color-pink:	#a93c96;
 $color-beige:	#a09986;
 $color-white: 	#ffffff;
 $color-lgray: 	#cccccc;
-$color-mgray:	#999999;
+$color-mgray:	#666666;
 $color-dgray: 	#333333;
 $color-black: 	#000000;
 
@@ -76,7 +100,7 @@ $color-black: 	#000000;
 
 	@media (max-width: 600px) {
 		left: 28px;
-	} 	
+	}
 }
 
 .uw-links {
@@ -122,12 +146,12 @@ $color-black: 	#000000;
 
 .nav {
 	position: fixed;
-	top: 200px;
+	top: 170px;
 	left: 54px;
 
 	@media (max-width: 600px) {
 		display: none;
-	} 
+	}
 }
 
 .nav-fixed {
@@ -142,7 +166,7 @@ $color-black: 	#000000;
 
 	li {
 		font-size: 16px;
-		margin-bottom: 15px;
+		margin-bottom: 12px;
 	}
 
 	a {
@@ -171,7 +195,7 @@ a.comp-item {
 	margin: 0 0 0 16px;
 
 	li {
-		margin-bottom: 13px;
+		margin-bottom: 9px;
 	}
 
 	a.active {
@@ -213,11 +237,11 @@ a.comp-item {
 ////////////////////////
 
 .main {
-	margin: 156px 0 240px 285px;
-	
+	margin: 126px 0 240px 265px;
+
 	@media (max-width: 600px) {
 		margin-left: 40px;
-	} 
+	}
 }
 
 article {
@@ -304,6 +328,10 @@ hr {
 
 table {
 	border-collapse: collapse;
+
+	.code-box {
+		margin: 0;
+	}
 }
 
 th, td {
@@ -445,11 +473,11 @@ tr {
 // TYPOGRAPHY TABLE ////
 
 .type-element {
-	width: 300px;
+	width: 320px;
 }
 
 .type-specs {
-	width: 150px;
+	width: 400px;
 }
 
 .type-description {
@@ -494,7 +522,7 @@ h3.site {
 	font-weight: normal;
 	color: $color-black;
 	line-height: 35px;
-	letter-spacing: -0.2px;	
+	letter-spacing: -0.2px;
 }
 
 h4.site {
@@ -502,7 +530,7 @@ h4.site {
 	font-weight: bold;
 	color: $color-black;
 	line-height: 35px;
-	letter-spacing: 1px;	
+	letter-spacing: 1px;
 }
 
 h5.site {
@@ -585,7 +613,7 @@ select.site {
 	// -webkit-appearance: none;
 	// -moz-appearance: none;
 	font-family: 'Karla';
-	font-size: 12px;
+	font-size: 0.94rem;
 	height: 25px;
 	background: $color-white;
 	// background: url(images/caret.png) no-repeat right 6px top 8px;
@@ -600,11 +628,9 @@ select.site {
 }
 
 .all-forms {
-	margin: 30px auto 60px;
-	padding: 30px;
+	margin: 30px 0 60px;
+	padding: 30px 0;
 	width: 250px;
-	background: #f3f3f3;
-	border: 1px solid #ddd;
 }
 
 .site-input:not(:last-child) {
@@ -613,20 +639,20 @@ select.site {
 
 .group-label {
 	display: block;
-	font-size: 10px;
+	font-size: 0.94rem;
 	font-weight: bold;
-	color: $color-purple;
+	color: $color-black;
 	letter-spacing: 0.7px;
 	text-transform: uppercase;
-	margin: 0 0 3px;
+	margin: 0 0 5px;
 }
 
 .input-container {
-	font-size: 12px;
+	font-size: 0.94rem;
 }
 
 .input-item {
-	margin: 0 0 2px;
+	margin: 0 0 5px;
 }
 
 input[type=text].site {
@@ -634,6 +660,7 @@ input[type=text].site {
 	height: 25px;
 	box-sizing: border-box;
 	padding: 0 6px;
+	font-size: 0.94rem;
 }
 
 input[type=submit].site {
@@ -643,7 +670,7 @@ input[type=submit].site {
 	appearance: none;
 	background: $color-white;
 	font-family: 'Karla';
-	font-size: 12px;
+	font-size: 0.88rem;
 	font-weight: bold;
 	letter-spacing: 0.7px;
 	text-transform: uppercase;
@@ -652,10 +679,10 @@ input[type=submit].site {
 	height: 32px;
 	padding: 0 10px;
 
-	&:active {
-		background: $color-white;
-		border-color: $color-dgray;
-		color: $color-black;
+	&:active, &:focus, &:hover {
+		background: $color-pink;
+		border-color: $color-pink;
+		color: $color-white;
 	}
 }
 
@@ -665,7 +692,7 @@ input[type=submit].site.alt-submit {
 	-moz-appearance: none;
 	appearance: none;
 	font-family: 'Karla';
-	font-size: 14px;
+	font-size: 0.88rem;
 	font-weight: normal;
 	text-transform: none;
 	letter-spacing: 0;
@@ -683,12 +710,13 @@ input[type=submit].site.alt-submit {
 
 .site-button-container {
 	width: 850px;
+	margin: 30px 0 60px;
 }
 
 .button-dark-bg, .button-light-bg {
 	box-sizing: border-box;
 	width: 300px;
-	margin: 0 auto;
+	margin: 0;
 	padding: 50px;
 	text-align: center;
 }
@@ -706,9 +734,9 @@ input[type=submit].site.alt-submit {
 .site-button {
 	display: inline-block;
 	box-sizing: border-box;
-	padding: 8px 12px 0;
+	padding: 8px 12px 24px;
 	height: 32px;
-	font-size: 12px;
+	font-size: 0.88rem;
 	font-weight: bold;
 	letter-spacing: 0.7px;
 	text-transform: uppercase;
@@ -719,9 +747,10 @@ input[type=submit].site.alt-submit {
 	color: $color-white;
 	background: $color-dgray;
 
-	&:active {
+	&:active, &:focus, &:hover {
+		background: $color-pink;
+		border-color: $color-pink;
 		color: $color-white;
-		border-color: $color-white;
 	}
 }
 
@@ -730,10 +759,25 @@ input[type=submit].site.alt-submit {
 	color: #585858;
 	background: $color-white;
 
-	&:active {
-		color: $color-black;
-		border-color: $color-black;
+	&:active, &:focus, &:hover {
+		background: $color-pink;
+		border-color: $color-pink;
+		color: $color-white;
 	}
 }
 
+.site-breadcrumb {
+	cursor: pointer;
+	display: inline;
+	color: #4b2d83;
+	text-decoration: none;
+	font-size: 0.75rem;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+
+	&:hover {
+		color: #a93c96;
+		border-bottom: 1px solid #ccc;
+	}
+}
 
