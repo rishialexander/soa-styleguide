@@ -362,6 +362,10 @@ tr {
 	}
 }
 
+.bottom-margin-please {
+	margin-bottom: 60px;
+}
+
 .table-description {
 	width: 350px;
 	margin: 0;
@@ -639,7 +643,7 @@ select.site {
 
 .group-label {
 	display: block;
-	font-size: 0.94rem;
+	font-size: 0.81rem;
 	font-weight: bold;
 	color: $color-black;
 	letter-spacing: 0.7px;

@@ -51,7 +51,7 @@
 		<article id='overview'>
 			<h1 id='overview'>Overview</h1>
 			<p>This is the style guide for the forthcoming School of Art + Art History + Design website. It provides tools, assets and guidance to streamline the workflow between designers and developers, and maintain a consistency in style across the entire site.</p>
-			<p>The style guide was last updated on January 17, 2016. For more information, contact Rishi Agarwal (<a href='mailto:rishialexander@gmail.com'>rishialexander@gmail.com</a>).</p>
+			<p>The style guide was last updated on January 22, 2016. For more information, contact Rishi Agarwal (<a href='mailto:rishialexander@gmail.com'>rishialexander@gmail.com</a>).</p>
 
 			<h2>Interactive prototypes</h2>
 			<p>The prototypes below are designed to demonstrate the interactive and responsive aspects of the website. They are also helpful for understanding how all of the parts fit together.</p>
@@ -88,9 +88,9 @@
 					<td><p class='table-description'>Link rollover</p></td>
 				</tr>
 				<tr>
-					<td>Gold</td>
+					<td>Light Gold</td>
 					<td><div class='color-sample color-beige'></div></td>
-					<td class='code'>#b7a57a</td>
+					<td class='code'>#e8e3d3</td>
 					<td><p class='table-description'>Links on black backgrounds</p></td>
 				</tr>
 				<tr>
@@ -103,7 +103,7 @@
 					<td>Light Gray</td>
 					<td><div class='color-sample color-lgray'></div></td>
 					<td class='code'>#cccccc</td>
-					<td><p class='table-description'>Link underline, and footer text</p></td>
+					<td><p class='table-description'>Link underline, footer text</p></td>
 				</tr>
 				<tr>
 					<td>Medium Gray</td>
@@ -121,7 +121,7 @@
 					<td>Black</td>
 					<td><div class='color-sample color-black'></div></td>
 					<td class='code'>#000000</td>
-					<td><p class='table-description'>Body text and sidebar backgrounds</p></td>
+					<td><p class='table-description'>Body text, sidebar backgrounds</p></td>
 				</tr>
 			</table>
 		</article>
@@ -405,7 +405,7 @@
 					</ul>
 					<div class='code code-title'>Top level text</div>
 					<ul class='no-dots code'>
-						<li>font-size: 1rem;</li>
+						<li>font-size: 1.13rem;</li>
 						<li>margin-right: 25px;</li>
 						<li>padding: 8px 12px;</li>
 					</ul>
@@ -484,9 +484,88 @@
 
 			<div id='images'>
 				<h2>Images within content area</h2>
-				<h3>Desktop</h3>
-				<!-- <p class='unspecified'>Unspecified</p> -->
-				<img src='images/images-desktop.png' />
+				<h3>Thumbnails</h3>
+				<p>Thumbnails should be top aligned with the first line of body copy if they are placed inline.</p>
+				<div class='code-box'>
+					<div class='code code-title'>Thumbnails</div>
+					<ul class='no-dots code'>
+						<li>width: 150px;</li>
+						<li>height: 125px;</li>
+						<li>float: right;</li>
+						<li>padding: 0 0 15px 15px;</li>
+					</ul>
+				</div><img src='images/images-thumbnail.png' />
+				<h3>Medium</h3>
+				<div class='code-box'>
+					<div class='code code-title'>Medium images</div>
+					<ul class='no-dots code'>
+						<li>max-width: 220px;</li>
+						<li>height: auto;</li>
+						<li>float: left;</li>
+						<li>padding: 25px;</li>
+					</ul>
+				</div>
+				<img src='images/images-medium.png' />
+				<h3>Large</h3>
+				<p>Large images should be centered at the maximum width. If the images are not proportioned to fit perfectly, black bars will be added on either side.</p>
+				<div class='code-box'>
+					<div class='code code-title'>Large images</div>
+					<ul class='no-dots code'>
+						<li>width: 510px;</li>
+						<li>height: 350px;</li>
+					</ul>
+				</div>
+				<img src='images/images-large.png' />
+				<h3>Captions</h3>
+				<div class='code-box'>
+					<div class='code code-title'>Overlaid on image</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.63rem;</li>
+						<li>color: #333333; (dark gray)</li>
+						<li>background: rgba(255, 255, 255, 0.6); (60% white)</li>
+					</ul>
+					<div class='code code-title'>Below image</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.75rem;</li>
+						<li>color: #000000; (black)</li>
+					</ul>
+				</div>
+				<img src='images/images-captions.png' />
+				<h3>Pop-up box</h3>
+				<p>Use the default styling: translucent black background, with white text. The text should be set in Karla.</p>
+				<div class='code-box bottom-margin-please'>
+					<div class='code code-title'>Pop-up box</div>
+					<ul class='no-dots code'>
+						<li>font-family: 'Karla';</li>
+					</ul>
+				</div>
+				<h3>Faculty Images</h3>
+				<div class='code-box'>
+					<div class='code code-title'>Faculty images</div>
+					<ul class='no-dots code'>
+						<li>width: 200px;</li>
+						<li>height: 125px;</li>
+					</ul>
+				</div>
+				<img src='images/images-facultyimages.png' />
+				<h3>Faculty Headshots</h3>
+				<p>Faculty headshots may be displayed at different sizes but they should always be proportional. Large faculty page headshots are used on the individual faculty pages.</p>
+				<div class='code-box'>
+					<div class='code code-title'>Normal faculty headshots</div>
+					<ul class='no-dots code'>
+						<li>width: 140px;</li>
+						<li>height: 170px;</li>
+					</ul>
+					<div class='code code-title'>Large faculty headshots</div>
+					<ul class='no-dots code'>
+						<li>width: 190px;</li>
+						<li>height: 230px;</li>
+					</ul>
+				</div>
+				<img src='images/images-facultyheadshots.png' />
+				<h3>Division Home Page Sidebar Images</h3>
+				<p>The sidebar images are only present on Division home pages. They should match the width of the sidebar. Ideally they will rotate between a set of four or five images per Division.</p>
+				<img src='images/images-sidebar.png' />
 				<hr>
 			</div>
 
@@ -578,6 +657,7 @@
 					</ul>
 					<div class='code code-title'>Form labels</div>
 					<ul class='no-dots code'>
+						<li>font-size: 0.81rem;</li>
 						<li>font-weight: bold;</li>
 						<li>color: #000000; (black)</li>
 						<li>letter-spacing: 0.7px;</li>
