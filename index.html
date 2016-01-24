@@ -37,7 +37,7 @@
 				<li><a class='comp-item' href='#header'>Header</a></li>
 				<li><a class='comp-item' href='#navigation'>Navigation</a></li>
 				<li><a class='comp-item' href='#images'>Images</a></li>
-				<!-- <li><a class='comp-item' href='#tables'>Tables</a></li> -->
+				<li><a class='comp-item' href='#tables'>Tables</a></li>
 				<li><a class='comp-item' href='#sidebars'>Sidebars</a></li>
 				<li><a class='comp-item' href='#forms'>Forms</a></li>
 				<li><a class='comp-item' href='#buttons'>Buttons</a></li>
@@ -60,10 +60,13 @@
 			<p>For additional reference, see the <a href='https://github.com/rishialexander/soa/tree/gh-pages'>source code for the prototypes</a>.</p>
 
 			<div class='screengrabs'>
-				<img class='screengrab' src='images/screengrab-1.png'>
-				<img class='screengrab' src='images/screengrab-2.png'>
-				<img class='screengrab' src='images/screengrab-3.png'>
-				<img class='screengrab' src='images/screengrab-4.png'>
+				<a class='screengrab-link' href='downloads/reference/SoAAHD-1.jpg'><img class='screengrab' src='images/screenshot-1.jpg'></a>
+				<a class='screengrab-link' href='downloads/reference/SoAAHD-2.jpg'><img class='screengrab' src='images/screenshot-2.jpg'></a>
+				<a class='screengrab-link' href='downloads/reference/SoAAHD-3.jpg'><img class='screengrab' src='images/screenshot-3.jpg'></a>
+				<a class='screengrab-link' href='downloads/reference/SoAAHD-4.jpg'><img class='screengrab' src='images/screenshot-4.jpg'></a>
+				<a class='screengrab-link' href='downloads/reference/SoAAHD-5.jpg'><img class='screengrab' src='images/screenshot-5.jpg'></a>
+				<a class='screengrab-link' href='downloads/reference/SoAAHD-6.jpg'><img class='screengrab' src='images/screenshot-6.jpg'></a>
+				<a class='screengrab-link' href='downloads/reference/SoAAHD-7.jpg'><img class='screengrab' src='images/screenshot-7.jpg'></a>
 			</div>
 		</article>
 		<article id='colors'>
@@ -233,6 +236,18 @@
 						<div class='code-box'>
 							<ul class='no-dots code'>
 								<li>1rem purple</li>
+								<li>1px light gray underline</li>
+								<li>pink on hover</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><a class='link-test-alt' id='link-test-2' class='site' href='#link-test-2'>This is an alternate link</a></td>
+					<td>
+						<div class='code-box'>
+							<ul class='no-dots code'>
+								<li>1rem bold purple</li>
 								<li>1px light gray underline</li>
 								<li>pink on hover</li>
 							</ul>
@@ -494,7 +509,8 @@
 						<li>float: right;</li>
 						<li>padding: 0 0 15px 15px;</li>
 					</ul>
-				</div><img src='images/images-thumbnail.png' />
+				</div>
+				<img src='images/images-thumbnail.png' />
 				<h3>Medium</h3>
 				<div class='code-box'>
 					<div class='code code-title'>Medium images</div>
@@ -565,15 +581,74 @@
 				<img src='images/images-facultyheadshots.png' />
 				<h3>Division Home Page Sidebar Images</h3>
 				<p>The sidebar images are only present on Division home pages. They should match the width of the sidebar. Ideally they will rotate between a set of four or five images per Division.</p>
-				<img src='images/images-sidebar.png' />
+				<a class='clean-link' href='downloads/reference/SoAAHD-3.jpg'><img src='images/images-sidebar.png' /></a>
 				<hr>
 			</div>
 
-			<!-- <div id='tables'>
+			<div id='tables'>
 				<h2>Tables</h2>
-				<p class='unspecified'>Unspecified</p>
+				<div class='code-box'>
+					<div class='code code-title'>Tables</div>
+					<ul class='no-dots code'>
+						<li>font-size: 1rem;</li>
+						<li>color: #000000; (black)</li>
+						<li>border: 1px solid #cccccc; (light gray)</li>
+					</ul>
+					<div class='code code-title'>Header</div>
+					<ul class='no-dots code'>
+						<li>color: #ffffff; (white)</li>
+						<li>font-weight: bold;</li>
+						<li>background: #000000; (black)</li>
+					</ul>					
+					<div class='code code-title'>Even rows</div>
+					<ul class='no-dots code'>
+						<li>background: #eeeeee;</li>
+					</ul>
+					<div class='code code-title'>Cells</div>
+					<ul class='no-dots code'>
+						<li>height: 40px;</li>
+						<li>padding: 10px 12px;</li>
+					</ul>
+				</div>
+				<table class='site'>
+					<tr>
+						<th>Qtr</th>
+						<th>Course</th>
+						<th>Section/SLN</th>
+						<th>Meetings</th>
+						<th>Location</th>
+					</tr>
+					<tr>
+						<td>SPR</td>
+						<td><a class='link-test-alt' href='#'>ART 101: Introduction To Art</a></td>
+						<td>A - 13206</td>
+						<td>MWF 12:30-13:20</td>
+						<td>SMI 120</td>
+					</tr>
+					<tr>
+						<td>SPR</td>
+						<td><a class='link-test-alt' href='#'>ART 101: Introduction To Art</a></td>
+						<td>AA - 13207</td>
+						<td>TTh 11:30-12:20</td>
+						<td>SMI 305</td>
+					</tr>
+					<tr>
+						<td>SPR</td>
+						<td><a class='link-test-alt' href='#'>ART 101: Introduction To Art</a></td>
+						<td>AB - 13208</td>
+						<td>TTh 12:30-13:20</td>
+						<td>MEB 243</td>
+					</tr>
+					<tr>
+						<td>SPR</td>
+						<td><a class='link-test-alt' href='#'>ART 101: Introduction To Art</a></td>
+						<td>AC - 13209</td>
+						<td>TTh 11:30-12:20</td>
+						<td>SMI 120</td>
+					</tr>
+				</table>
 				<hr>
-			</div> -->
+			</div>
 
 			<div id='sidebars'>
 				<h2>Sidebars</h2>
@@ -592,11 +667,25 @@
 						<li>background: rgba(255, 255, 255, 0.9); (90% white)</li>
 						<li>border-top: 15px solid black;</li>
 					</ul>
-					<div class='code code-title'>Navigation unordered lists</div>
+					<div class='code code-title'>Navigation links (general)</div>
 					<ul class='no-dots code'>
+						<li>color: #4b2d83; (purple)</li>
 						<li>font-size: 0.875rem;</li>
-						<li>line-height: 1.5;</li>
+						<li>line-height: 1.6;</li>
 						<li>margin-bottom: 12px;</li>
+					</ul>
+					<div class='code code-title'>Navigation links (first level)</div>
+					<ul class='no-dots code'>
+						<li>font-weight: bold;</li>
+					</ul>
+					<div class='code code-title'>Navigation links (second level)</div>
+					<ul class='no-dots code'>
+						<li>font-weight: normal;</li>
+					</ul>
+					<div class='code code-title'>Navigation links (current page)</div>
+					<ul class='no-dots code'>
+						<li>color: #000000; (black)</li>
+						<li>font-weight: bold;</li>
 					</ul>
 					<div class='code code-title'>Information section</div>
 					<ul class='no-dots code'>
@@ -621,7 +710,7 @@
 						<li>width: 200px;</li>
 						<li>padding: 24px 20px;</li>
 					</ul>
-					<div class='code code-title'>Navigation unordered lists</div>
+					<div class='code code-title'>Navigation links</div>
 					<ul class='no-dots code'>
 						<li>line-height: 2;</li>
 					</ul>
@@ -800,6 +889,8 @@
 				</div>
 				<img src='images/tabs-desktop.png' />
 
+				<h3>Fieldsets</h3>
+				<img src='images/fieldset-desktop.png' />
 				<hr>
 			</div>
 
