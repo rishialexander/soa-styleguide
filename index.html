@@ -51,7 +51,7 @@
 		<article id='overview'>
 			<h1 id='overview'>Overview</h1>
 			<p>This is the style guide for the forthcoming School of Art + Art History + Design website. It provides tools, assets and guidance to streamline the workflow between designers and developers, and maintain a consistency in style across the entire site.</p>
-			<p>The style guide was last updated on January 24, 2016. For more information, contact Rishi Agarwal (<a href='mailto:rishialexander@gmail.com'>rishialexander@gmail.com</a>).</p>
+			<p>The style guide was last updated on January 26, 2016. For more information, contact Rishi Agarwal (<a href='mailto:rishialexander@gmail.com'>rishialexander@gmail.com</a>).</p>
 
 			<h2>Interactive prototypes</h2>
 			<p>The prototypes below are designed to demonstrate the interactive and responsive aspects of the website. They are also helpful for understanding how all of the parts fit together.</p>
@@ -294,7 +294,13 @@
 					<td>
 						<ul class='site'>
 							<li>Unordered list</li>
-							<li>Second item on the list</li>
+							<li>Second item on the list
+								<ul class='site'>
+									<li>Indented list</li>
+									<li>Item two</li>
+									<li>Item three</li>
+								</ul>
+							</li>
 							<li>Yet another bullet list item</li>
 						</ul>
 					</td>
@@ -304,6 +310,7 @@
 								<li>1rem black</li>
 								<li>1.75 line-height</li>
 								<li>light gray dot</li>
+								<li>0 0 0 24px padding</li>
 							</ul>
 						</div>
 					</td>
@@ -312,7 +319,13 @@
 					<td>
 						<ol class='site'>
 							<li>Ordered list</li>
-							<li>Second item on the list</li>
+							<li>Second item on the list
+								<ol class='site'>
+									<li>Indented list</li>
+									<li>Item two</li>
+									<li>Item three</li>
+								</ol>
+							</li>
 							<li>Yet another bullet list item</li>
 						</ol>
 					</td>
@@ -321,6 +334,7 @@
 							<ul class='no-dots code'>
 								<li>1rem black</li>
 								<li>1.75 line-height</li>
+								<li>0 0 0 24px padding</li>
 							</ul>
 						</div>
 					</td>
@@ -363,11 +377,20 @@
 						<li>left: 75px;</li>
 						<li>bottom: 0px;</li>
 					</ul>
+					<div class='code code-title'>Login links</div>
+					<ul class='no-dots code'>
+						<li>font-size: 0.81rem;</li>
+						<li>color: #4b2d83; (purple)</li>
+						<li>font-weight: bold;</li>
+						<li>right: 38px;</li>
+						<li>top: 14px;</li>
+					</ul>
 					<div class='code code-title'>Quick links</div>
 					<ul class='no-dots code'>
 						<li>font-size: 0.81rem;</li>
 						<li>color: #666666; (medium gray)</li>
 						<li>right: 38px;</li>
+						<li>top: 32px;</li>
 					</ul>
 				</div>
 				<img src='images/header-desktop.png' />
@@ -383,6 +406,12 @@
 					<ul class='no-dots code'>
 						<li>left: 30px;</li>
 					</ul>
+					<div class='code code-title'>Login links</div>
+					<ul class='no-dots code'>
+						<li>font-weight: normal;</li>
+						<li>right: 60px;</li>
+						<li>top: 16px;</li>
+					</ul>
 					<div class='code code-title'>Hamburger button</div>
 					<ul class='no-dots code'>
 						<li>height: 50px;</li>
@@ -391,16 +420,31 @@
 				</div>
 				<img src='images/header-tablet.png' />
 				<h3>Mobile</h3>
-				<p>The only difference between tablets and phones is that the margins are smaller on phones.</p>
+				<p>On mobile, a second header is added to fit the My Account / Logout buttons. The hamburger button is dropped down for visual symmetry.</p>
 				<div class='code-box'>
 					<ul class='no-dots code'><li>Less than 600px width</li></ul>
-					<div class='code code-title'>Header</div>
+					<div class='code code-title'>Upper header</div>
 					<ul class='no-dots code'>
 						<li>height: 50px;</li>
 					</ul>
 					<div class='code code-title'>W logo</div>
 					<ul class='no-dots code'>
 						<li>left: 5px;</li>
+					</ul>
+					<div class='code code-title'>Lower header</div>
+					<ul class='no-dots code'>
+						<li>height: 40px;</li>
+						<li>border-top: 1px solid #f1f1f1;</li>
+					</ul>
+					<div class='code code-title'>Login links</div>
+					<ul class='no-dots code'>
+						<li>left: 9px;</li>
+						<li>top: 13px;</li>
+					</ul>
+					<div class='code code-title'>Hamburger button</div>
+					<ul class='no-dots code'>
+						<li>height: 40px;</li>
+						<li>width: 44px;</li>
 					</ul>
 				</div>
 				<img src='images/header-mobile.png' />
