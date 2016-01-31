@@ -51,7 +51,7 @@
 		<article id='overview'>
 			<h1 id='overview'>Overview</h1>
 			<p>This is the style guide for the forthcoming School of Art + Art History + Design website. It provides tools, assets and guidance to streamline the workflow between designers and developers, and maintain a consistency in style across the entire site.</p>
-			<p>The style guide was last updated on January 26, 2016. For more information, contact Rishi Agarwal (<a href='mailto:rishialexander@gmail.com'>rishialexander@gmail.com</a>).</p>
+			<p>The style guide was last updated on January 31, 2016. For more information, contact Rishi Agarwal (<a href='mailto:rishialexander@gmail.com'>rishialexander@gmail.com</a>).</p>
 
 			<h2>Interactive prototypes</h2>
 			<p>The prototypes below are designed to demonstrate the interactive and responsive aspects of the website. They are also helpful for understanding how all of the parts fit together.</p>
@@ -131,6 +131,7 @@
 		<article id='typography'>
 			<h1>Typography</h1>
 			<p>The Art + Art History + Design website is set entirely in Karla. To maximize readability, the design uses widths and font sizes that aim for 8-12 words per line when possible.</p>
+			<p>The website uses relative units (rem) based on a baseline size of 16px.</p>
 			<h2>Semantic hierarchy</h2>
 			<table>
 				<tr>
@@ -362,7 +363,7 @@
 			<div id='header'>
 				<h2>Header</h2>
 				<h3>Desktop</h3>
-				<p>The header connects the Art + Art History + Design departments with the greater University of Washington. The gray links go to various external pages, and the logo goes to the University of Washington homepage.</p>
+				<p>The header connects the Art + Art History + Design departments with the greater University of Washington. The gray links go to various external pages, and the logo goes to the University of Washington homepage. The quick links are base-aligned with "University of Washington". The login links are top-aligned with the "W".</p>
 				<div class='code-box'>
 					<ul class='no-dots code'><li>800px width and greater</li></ul>
 					<div class='code code-title'>Header</div>
@@ -395,7 +396,7 @@
 				</div>
 				<img src='images/header-desktop.png' />
 				<h3>Tablet</h3>
-				<p>On tablet devices the gray shortcut links are removed and replaced with a hamburger button &#9776; that opens the navigation dropdown menu.</p>
+				<p>On tablet devices the gray shortcut links are removed and replaced with a hamburger button &#9776; that opens the navigation dropdown menu. The login links are vertically centered.</p>
 				<div class='code-box'>
 					<ul class='no-dots code'><li>600px up to 800px width</li></ul>
 					<div class='code code-title'>Header</div>
@@ -409,18 +410,25 @@
 					<div class='code code-title'>Login links</div>
 					<ul class='no-dots code'>
 						<li>font-weight: normal;</li>
-						<li>right: 60px;</li>
+						<li>right: 108px;</li>
 						<li>top: 16px;</li>
+					</ul>
+					<div class='code code-title'>Search button</div>
+					<ul class='no-dots code'>
+						<li>height: 50px;</li>
+						<li>width: 50px;</li>
+						<li>right: 50px;
 					</ul>
 					<div class='code code-title'>Hamburger button</div>
 					<ul class='no-dots code'>
 						<li>height: 50px;</li>
 						<li>width: 50px;</li>
+						<li>right: 0px;</li>
 					</ul>
 				</div>
 				<img src='images/header-tablet.png' />
 				<h3>Mobile</h3>
-				<p>On mobile, a second header is added to fit the My Account / Logout buttons. The hamburger button is dropped down for visual symmetry.</p>
+				<p>On mobile, a second header is added to fit the My Account / Logout buttons. The hamburger button is dropped down for visual symmetry. The login links are vertically centered.</p>
 				<div class='code-box'>
 					<ul class='no-dots code'><li>Less than 600px width</li></ul>
 					<div class='code code-title'>Upper header</div>
@@ -445,6 +453,13 @@
 					<ul class='no-dots code'>
 						<li>height: 40px;</li>
 						<li>width: 44px;</li>
+						<li>right: 44px;</li>
+					</ul>
+					<div class='code code-title'>Hamburger button</div>
+					<ul class='no-dots code'>
+						<li>height: 40px;</li>
+						<li>width: 44px;</li>
+						<li>right: 0px;</li>
 					</ul>
 				</div>
 				<img src='images/header-mobile.png' />
@@ -549,7 +564,7 @@
 					<div class='code code-title'>Thumbnails</div>
 					<ul class='no-dots code'>
 						<li>width: 150px;</li>
-						<li>height: 125px;</li>
+						<li>height: 125px; (flexible)</li>
 						<li>float: right;</li>
 						<li>padding: 0 0 15px 15px;</li>
 					</ul>
@@ -560,7 +575,7 @@
 					<div class='code code-title'>Medium images</div>
 					<ul class='no-dots code'>
 						<li>max-width: 220px;</li>
-						<li>height: auto;</li>
+						<li>height: auto; (flexible)</li>
 						<li>float: left;</li>
 						<li>padding: 25px;</li>
 					</ul>
@@ -572,7 +587,7 @@
 					<div class='code code-title'>Large images</div>
 					<ul class='no-dots code'>
 						<li>width: 510px;</li>
-						<li>height: 350px;</li>
+						<li>height: 350px; (flexible)</li>
 					</ul>
 				</div>
 				<img src='images/images-large.png' />
@@ -581,8 +596,8 @@
 					<div class='code code-title'>Overlaid on image</div>
 					<ul class='no-dots code'>
 						<li>font-size: 0.63rem;</li>
-						<li>color: #333333; (dark gray)</li>
-						<li>background: rgba(255, 255, 255, 0.6); (60% white)</li>
+						<li>color: #000000; (black)</li>
+						<li>background: rgba(255, 255, 255, 0.8); (80% white)</li>
 					</ul>
 					<div class='code code-title'>Below image</div>
 					<ul class='no-dots code'>
@@ -604,7 +619,7 @@
 					<div class='code code-title'>Faculty images</div>
 					<ul class='no-dots code'>
 						<li>width: 200px;</li>
-						<li>height: 125px;</li>
+						<li>height: 125px; (strict)</li>
 					</ul>
 				</div>
 				<img src='images/images-facultyimages.png' />
@@ -624,7 +639,7 @@
 				</div>
 				<img src='images/images-facultyheadshots.png' />
 				<h3>Division Home Page Sidebar Images</h3>
-				<p>The sidebar images are only present on Division home pages. They should match the width of the sidebar. Ideally they will rotate between a set of four or five images per Division.</p>
+				<p>The sidebar images are only present on Division home pages. They should match the width of the sidebar. There is no padding between the images and the other page sections. Ideally they will rotate between a set of four or five images per Division.</p>
 				<a class='clean-link' href='downloads/references/SoAAHD-3.jpg'><img src='images/images-sidebar.png' /></a>
 				<hr>
 			</div>
@@ -705,6 +720,7 @@
 						<li>width: 370px;</li>
 						<li>padding: 24px 40px;</li>
 						<li>margin-left: 8px;</li>
+						<li>margin-bottom: 8px;</li>
 					</ul>
 					<div class='code code-title'>Navigation section</div>
 					<ul class='no-dots code'>
@@ -715,8 +731,12 @@
 					<ul class='no-dots code'>
 						<li>color: #4b2d83; (purple)</li>
 						<li>font-size: 0.875rem;</li>
-						<li>line-height: 1.6;</li>
+						<li>line-height: 1.4;</li>
 						<li>margin-bottom: 12px;</li>
+					</ul>
+					<div class='code code-title'>Navigation link (general)</div>
+					<ul class='no-dots code'>
+						<li>padding-bottom: 4px;</li>
 					</ul>
 					<div class='code code-title'>Navigation links (first level)</div>
 					<ul class='no-dots code'>
@@ -725,6 +745,7 @@
 					<div class='code code-title'>Navigation links (second level)</div>
 					<ul class='no-dots code'>
 						<li>font-weight: normal;</li>
+						<li>margin: 6px 0 0 22px;</li>
 					</ul>
 					<div class='code code-title'>Navigation links (current page)</div>
 					<ul class='no-dots code'>
@@ -756,7 +777,11 @@
 					</ul>
 					<div class='code code-title'>Navigation links</div>
 					<ul class='no-dots code'>
-						<li>line-height: 2;</li>
+						<li>line-height: 1.5;</li>
+					</ul>
+					<div class='code code-title'>Navigation link (general)</div>
+					<ul class='no-dots code'>
+						<li>padding-bottom: 7px;</li>
 					</ul>
 				</div>
 				<img src='images/sidebar-tablet.png' />
@@ -773,6 +798,14 @@
 					<ul class='no-dots code'>
 						<li>background: rgba(255, 255, 255, 1); (white)</li>
 						<li>border-top: none;</li>
+					</ul>
+					<div class='code code-title'>Navigation links</div>
+					<ul class='no-dots code'>
+						<li>line-height: 1.5;</li>
+					</ul>
+					<div class='code code-title'>Navigation link (general)</div>
+					<ul class='no-dots code'>
+						<li>padding-bottom: 7px;</li>
 					</ul>					
 				</div>
 				<img src='images/sidebar-mobile.png' />
@@ -929,7 +962,11 @@
 						<li>font-weight: bold;</li>
 						<li>letter-spacing: 1px;</li>
 						<li>padding: 12px 16px;</li>
-					</ul>					
+					</ul>
+					<div class='code code-title'>Tab text (inactive)</div>
+					<ul class='no-dots code'>
+						<li>color: #666666; (medium gray)</li>
+					</ul>			
 				</div>
 				<img src='images/tabs-desktop.png' />
 
@@ -988,8 +1025,8 @@
 					<ul class='no-dots code'><li>800px width and greater</li></ul>
 					<div class='code code-title'>Footer</div>
 					<ul class='no-dots code'>
-						<li>font-size: 0.78rem;</li>
-						<li>line-height: 1.13rem;</li>
+						<li>font-size: 0.85rem;</li>
+						<li>line-height: 1.25rem;</li>
 						<li>color: #cccccc; (light gray)</li>
 						<li>padding: 40px 85px;</li>
 					</ul>
@@ -1088,7 +1125,6 @@
 						<li>Some pages may have multiple pictures in the background. Before adding them to the site, they must be composited into a single image.</li>
 					</ul>
 				</li>
-				<li>All of the content is aligned to the same left margin regardless of screen size. This includes the header, the logo, the article, and the footer.</li>
 			</ul>
 			<h3>Desktop</h3>
 			<p>This is the structure for a typical page featuring an article.</p>
